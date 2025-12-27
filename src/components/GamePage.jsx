@@ -165,36 +165,41 @@ export default function GamePage({ mode, personas, onBackHome }) {
   }, [todayPersona, gameStatus, handleLetterClick])
 
   const handleShare = async () => {
-    if (!todayPersona) return
-    const totalHints = todayPersona.hints.length
-    const hintsUsed = revealedHintCount
-    const wrongCount = wrongLetters.size
+  if (!todayPersona) return
+  const totalHints = todayPersona.hints.length
+  const hintsUsed = revealedHintCount
+  const wrongCount = wrongLetters.size
 
-    const statusEmoji =
-      gameStatus === 'won' ? '✅' : gameStatus === 'lost' ? '❌' : '⏳'
+  const statusEmoji =
+    gameStatus === 'won' ? '✅' : gameStatus === 'lost' ? '❌' : '⏳'
 
-    const titleLine = `PersonaGuesser – ${mode === 'real' ? 'Real' : 'Fictional'}`
-    const dateLine = new Date().toISOString().slice(0, 10)
-    const statsLine = `Hints used: ${hintsUsed}/${totalHints} • Wrong guesses: ${wrongCount} ${statusEmoji}`
+  const titleLine = `PersonaGuesser – ${mode === 'real' ? 'Real' : 'Fictional'}`
+  const dateLine = new Date().toISOString().slice(0, 10)
+  const statsLine = `Hints used: ${hintsUsed}/${totalHints} • Wrong guesses: ${wrongCount}/6 ${statusEmoji}`
+  const siteUrl = 'https://personaguesser.com'
 
-    const shareText = `${titleLine}\n${dateLine}\n${statsLine}\n`
+  const shareText = `${titleLine}\n${dateLine}\n${statsLine}\n${siteUrl}\n`
 
-    if (navigator.share) {
-      try {
-        await navigator.share({ text: shareText })
-        return
-      } catch {
-        // fall through to clipboard
-      }
-    }
-
+  if (navigator.share) {
     try {
-      await navigator.clipboard.writeText(shareText)
-      alert('Result copied to clipboard!')
+      await navigator.share({
+        text: shareText,
+        url: siteUrl, // some apps use this field
+      })
+      return
     } catch {
-      alert('Unable to share automatically. You can share manually:\n' + shareText)
+      // fall through to clipboard
     }
   }
+
+  try {
+    await navigator.clipboard.writeText(shareText)
+    alert('Result copied to clipboard!')
+  } catch {
+    alert('Unable to share automatically. You can share manually:\n' + shareText)
+  }
+}
+
 
   if (!todayPersona) {
     return (
@@ -270,11 +275,7 @@ export default function GamePage({ mode, personas, onBackHome }) {
           </div>
         )}
 
-        <div className="share-row">
-          <button className="button-secondary" onClick={handleShare}>
-            Share result
-          </button>
-        </div>
+        
       </div>
 
       {/* Result modal */}
