@@ -166,25 +166,51 @@ export default function GamePage({ mode, personas, onBackHome }) {
 
   const handleShare = async () => {
   if (!todayPersona) return
-  const totalHints = todayPersona.hints.length
+  const totalHints = todayPersona.hints.length // should be 6
   const hintsUsed = revealedHintCount
   const wrongCount = wrongLetters.size
+  const siteUrl = 'https://personaguesser.com'
 
   const statusEmoji =
     gameStatus === 'won' ? '✅' : gameStatus === 'lost' ? '❌' : '⏳'
 
   const titleLine = `PersonaGuesser – ${mode === 'real' ? 'Real' : 'Fictional'}`
   const dateLine = new Date().toISOString().slice(0, 10)
-  const statsLine = `Hints used: ${hintsUsed}/${totalHints} • Wrong guesses: ${wrongCount}/6 ${statusEmoji}`
-  const siteUrl = 'https://personaguesser.com'
 
-  const shareText = `${titleLine}\n${dateLine}\n${statsLine}\n${siteUrl}\n`
+  // Keep hintsUsed clamped between 0 and totalHints
+  const used = Math.max(0, Math.min(hintsUsed, totalHints))
+  const unused = Math.max(0, totalHints - used)
+
+  // Build an array of 6 boxes: first "used" red, then "unused" green
+  const boxes = [
+    ...Array(used).fill('🟥'),
+    ...Array(unused).fill('🟩'),
+  ]
+
+  // Split into 2 rows of 3 (for 6 hints total)
+  const rowSize = 3
+  const rows = []
+  for (let i = 0; i < boxes.length; i += rowSize) {
+    rows.push(boxes.slice(i, i + rowSize).join(' '))
+  }
+  const boardBlock = rows.join('\n')
+
+  const statsLine1 = `Hints used: ${hintsUsed}/${totalHints}`
+  const statsLine2 = `Wrong guesses: ${wrongCount}/6 ${statusEmoji}`
+
+  const shareText =
+    `${titleLine}\n` +
+    `${dateLine}\n` +
+    `${statsLine1}\n` +
+    `${statsLine2}\n` +
+    `${boardBlock}\n` +
+    `${siteUrl}\n`
 
   if (navigator.share) {
     try {
       await navigator.share({
         text: shareText,
-        url: siteUrl, // some apps use this field
+        url: siteUrl,
       })
       return
     } catch {
@@ -199,6 +225,7 @@ export default function GamePage({ mode, personas, onBackHome }) {
     alert('Unable to share automatically. You can share manually:\n' + shareText)
   }
 }
+
 
 
   if (!todayPersona) {
