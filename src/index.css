@@ -353,6 +353,11 @@ body {
   color: #92400e;             /* darker amber text */
   border: 1px solid #fbbf24;
 }
+
+.name-word-break {
+  width: 100%;   /* forces next letters to move to a new row */
+  height: 0;
+}
 @media (max-width: 640px) {
   /* Main area should stretch so the card can scroll */
   .app-main {

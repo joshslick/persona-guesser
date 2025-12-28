@@ -5,7 +5,7 @@ export default function NameDisplay({ name, guessedLetters }) {
 
   const renderChar = (ch, idx) => {
     if (ch === ' ') {
-      return <div key={idx} className="name-letter-space" />
+      return <div key={idx} className="name-word-break" />
     }
 
     const upper = ch.toUpperCase()
