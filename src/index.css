@@ -358,6 +358,37 @@ body {
   width: 100%;   /* forces next letters to move to a new row */
   height: 0;
 }
+
+.home-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home-section h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+}
+
+.home-section p {
+  margin: 0 0 0.75rem 0;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+.practice-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.practice-button:hover {
+  background-color: #1d4ed8;
+}
+
 @media (max-width: 640px) {
   /* Main area should stretch so the card can scroll */
   .app-main {

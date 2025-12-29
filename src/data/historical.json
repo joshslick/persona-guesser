@@ -1,5 +1,5 @@
 {
-  "realPersonas": [
+  "personas": [
     {
       "id": "einstein",
       "name": "ALBERT EINSTEIN",
@@ -52,7 +52,8 @@
         "Inventor & electrical engineer",
         "Alternating current & electrical innovation",
         "Serbia → United States",
-        "Slicked hair + coil / lightning"
+        "Slicked hair + coil / lightning",
+        "Visual description"
       ],
       "image": "/images/nikola-tesla.png"
     },
@@ -76,7 +77,7 @@
       "category": "real",
       "hints": [
         "Male",
-        "Born 1942",
+        "Born 1942 – Living",
         "Political leader",
         "President of the United States",
         "United States / Delaware connection",
@@ -90,16 +91,14 @@
       "category": "real",
       "hints": [
         "Male",
-        "1993-2025",
+        "Born 1993 – Living",
         "Political commentator / activist",
         "Known for media + public speaking work",
         "United States",
         "Short hair + microphone"
       ],
       "image": "/images/charlie-kirk.png"
-    }
-  ],
-  "fictionalPersonas": [
+    },
     {
       "id": "jesse-pinkman",
       "name": "JESSE PINKMAN",
@@ -124,7 +123,7 @@
         "Crime family leader / complex protagonist",
         "Television series (drama)",
         "New Jersey suburban + mafia setting",
-        "Silhouette in suit with cigar"
+        "Suit with cigar"
       ],
       "image": "/images/tony-soprano.png"
     },
