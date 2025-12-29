@@ -392,7 +392,7 @@ body {
 .square-button {
   width: 180px;
   height: 70px;
-  background: #2563eb;
+  background: #1e3a8a;
   color: white;
   border-radius: 12px;
   border: none;
@@ -409,7 +409,7 @@ body {
 }
 
 .daily-button {
-  background: #000000;
+  background: #1e3a8a;
 }
 
 .daily-button:hover {
