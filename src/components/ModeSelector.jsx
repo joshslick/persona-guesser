@@ -18,41 +18,110 @@ export default function ModeSelector({ onSelectMode }) {
       </p>
 
       <section style={{ textAlign: "center", marginTop: "0.5rem" }}>
-        <h2 style={{ margin: "0" }}>DAILY PUZZLE</h2>
-
-        <div className="mode-buttons" style={{ marginTop: "0.35rem" }}>
-          <button
-            className="button-primary mode-button"
-            onClick={() => onSelectMode("real")}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "0.5rem",
+            marginTop: "0.4rem",
+          }}
+        >
+          {/* REAL DAILY */}
+          <div
+            className="daily-row"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              justifyContent: "center",
+            }}
           >
-            Real Character
-          </button>
+            <button
+              className="square-button daily-button"
+              onClick={() => onSelectMode("real")}
+            >
+              Real Persona
+            </button>
+            <span
+              className="daily-badge"
+              style={{
+                background: "#facc15",
+                color: "#000",
+                fontSize: "0.7rem",
+                padding: "4px 10px",
+                borderRadius: "999px",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "0.03em",
+                whiteSpace: "nowrap",
+              }}
+            >
+              Daily
+            </span>
+          </div>
 
-          <button
-            className="button-primary mode-button"
-            onClick={() => onSelectMode("fictional")}
+          {/* FICTIONAL DAILY */}
+          <div
+            className="daily-row"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              justifyContent: "center",
+            }}
           >
-            Fictional Character
-          </button>
+            <button
+              className="square-button daily-button"
+              onClick={() => onSelectMode("fictional")}
+            >
+              Fictional Persona
+            </button>
+            <span
+              className="daily-badge"
+              style={{
+                background: "#facc15",
+                color: "#000",
+                fontSize: "0.7rem",
+                padding: "4px 10px",
+                borderRadius: "999px",
+                fontWeight: 700,
+                textTransform: "uppercase",
+                letterSpacing: "0.03em",
+                whiteSpace: "nowrap",
+              }}
+            >
+              Daily
+            </span>
+          </div>
+
+          {/* PRACTICE */}
+          <div
+            className="daily-row"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              justifyContent: "center",
+            }}
+          >
+            <button
+              className="square-button"
+              onClick={() => onSelectMode("practice")}
+            >
+              Practice Mode
+            </button>
+            <span
+              style={{
+                visibility: "hidden",
+                padding: "4px 10px",
+              }}
+            >
+              Daily
+            </span>
+          </div>
         </div>
       </section>
-
-      {/*<section
-        className="home-section"
-        style={{ marginTop: "1.5rem", textAlign: "center" }}
-      >
-        <h2>PRACTICE</h2>
-        <p style={{ marginTop: "0.25rem", color: "#4b5563" }}>
-          Practice with previous days
-        </p>
-
-        <button
-          className="practice-button"
-          onClick={() => onSelectMode("practice")}
-        >
-          Start Practice Game
-        </button>
-      </section>*/}
     </div>
   );
 }
