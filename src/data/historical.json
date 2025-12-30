@@ -7,10 +7,10 @@
       "hints": [
         "Male",
         "1879–1955",
+        "Wild hair + mustache silhouette",
         "Theoretical physicist",
-        "Theory of relativity, modern physics",
         "Germany → Switzerland → United States",
-        "Wild hair + mustache silhouette"
+        "Theory of relativity, modern physics"
       ],
       "image": "/images/einstein.png"
     },
@@ -20,11 +20,11 @@
       "category": "real",
       "hints": [
         "Male",
-        "Born 1946 - Living",
+        "Born 1946 – Living",
+        "Distinct hairstyle + suit",
         "Businessman & political figure",
-        "President of the United States",
         "United States / New York",
-        "Distinct hairstyle + suit"
+        "President of the United States"
       ],
       "image": "/images/donald-trump.png"
     },
@@ -35,10 +35,10 @@
       "hints": [
         "Male",
         "Born 1971 – Living",
+        "Short hair, suit or jacket, tech-industry appearance",
         "Entrepreneur & engineer",
-        "Electric vehicles, private spaceflight, innovative technology companies",
         "South Africa → Canada → United States",
-        "Short hair, suit or jacket, tech-industry appearance"
+        "Electric vehicles, private spaceflight, innovative technology companies"
       ],
       "image": "/images/elon-musk.png"
     },
@@ -49,11 +49,10 @@
       "hints": [
         "Male",
         "1856–1943",
-        "Inventor & electrical engineer",
-        "Alternating current & electrical innovation",
-        "Serbia → United States",
         "Slicked hair + coil / lightning",
-        "Visual description"
+        "Inventor & electrical engineer",
+        "Serbia → United States",
+        "Alternating current & electrical innovation"
       ],
       "image": "/images/nikola-tesla.png"
     },
@@ -64,10 +63,10 @@
       "hints": [
         "Male",
         "1809–1865",
+        "Tall hat + beard",
         "Political leader",
-        "U.S. Civil War president, emancipation era",
         "United States",
-        "Tall hat + beard"
+        "U.S. Civil War president, emancipation era"
       ],
       "image": "/images/abraham-lincoln.png"
     },
@@ -78,10 +77,10 @@
       "hints": [
         "Male",
         "Born 1942 – Living",
+        "Short hair + suit",
         "Political leader",
-        "President of the United States",
         "United States / Delaware connection",
-        "Short hair + suit"
+        "President of the United States"
       ],
       "image": "/images/joe-biden.png"
     },
@@ -92,12 +91,40 @@
       "hints": [
         "Male",
         "Born 1993 – Living",
+        "Short hair + microphone",
         "Political commentator / activist",
-        "Known for media + public speaking work",
         "United States",
-        "Short hair + microphone"
+        "Known for media + public speaking work"
       ],
       "image": "/images/charlie-kirk.png"
+    },
+    {
+      "id": "martin-luther-king-jr",
+      "name": "MARTIN LUTHER KING",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1929–1968",
+        "Often shown speaking at a podium in a suit",
+        "Baptist minister & civil rights leader",
+        "United States / Atlanta, Georgia",
+        "Led nonviolent movement for racial equality"
+      ],
+      "image": "/images/MLK.png"
+    },
+    {
+      "id": "franklin-roosevelt",
+      "name": "FRANKLIN DELANO ROOSEVELT",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1882–1945",
+        "Round glasses + cigarette holder imagery",
+        "Political leader & U.S. President",
+        "United States / New York",
+        "Led the U.S. through the Great Depression and World War II"
+      ],
+      "image": "/images/franklin-roosevelt.png"
     },
     {
       "id": "jesse-pinkman",
@@ -106,10 +133,10 @@
       "hints": [
         "Male",
         "2000s TV drama era",
-        "Streetwise partner / anti-hero",
+        "Beanie hat + hoodie",
         "Television series (crime drama)",
         "American Southwest setting",
-        "Beanie hat + hoodie"
+        "Streetwise partner / anti-hero"
       ],
       "image": "/images/jesse-pinkman.png"
     },
@@ -120,10 +147,10 @@
       "hints": [
         "Male",
         "Late 1990s–2000s TV era",
-        "Crime family leader / complex protagonist",
+        "Suit with cigar",
         "Television series (drama)",
         "New Jersey suburban + mafia setting",
-        "Suit with cigar"
+        "Crime family leader / complex protagonist"
       ],
       "image": "/images/tony-soprano.png"
     },
@@ -134,10 +161,10 @@
       "hints": [
         "Male",
         "2000s–2010s TV drama era",
-        "Teacher-turned-criminal mastermind",
+        "Bald head + glasses + hat",
         "Television series (crime drama)",
         "New Mexico / desert setting",
-        "Bald head + glasses + hat"
+        "Teacher-turned-criminal mastermind"
       ],
       "image": "/images/walter-white.png"
     },
@@ -148,10 +175,10 @@
       "hints": [
         "Male",
         "2000s sitcom era",
-        "Office manager / comedic lead",
+        "Suit with goofy posture",
         "Television comedy series",
         "Scranton, Pennsylvania workplace setting",
-        "Suit with goofy posture"
+        "Office manager / comedic lead"
       ],
       "image": "/images/michael-scott.png"
     },
@@ -162,10 +189,10 @@
       "hints": [
         "Male",
         "Fantasy novel + film era",
-        "Ranger / warrior / reluctant king",
+        "Cloak + sword",
         "Books + movie trilogy",
         "Middle-earth world setting",
-        "Cloak + sword"
+        "Ranger / warrior / reluctant king"
       ],
       "image": "/images/aragorn.png"
     },
@@ -176,10 +203,10 @@
       "hints": [
         "Male (cartoon character)",
         "1990s–2000s animated era",
-        "Optimistic fast-food worker / mascot",
+        "Square body + smiling",
         "Animated TV series",
         "Underwater cartoon town setting",
-        "Square body + smiling"
+        "Optimistic fast-food worker / mascot"
       ],
       "image": "/images/spongebob.png"
     },
@@ -190,12 +217,1132 @@
       "hints": [
         "Male",
         "1980s–1990s novel + film era",
-        "Wealthy professional with double life",
+        "Suit + slicked hair + briefcase",
         "Book → film adaptation (psychological thriller)",
         "Manhattan / corporate luxury setting",
-        "Suit + slicked hair + briefcase"
+        "Wealthy professional with double life"
       ],
       "image": "/images/patrick-bateman.png"
+    },
+    {
+      "id": "daenerys-targaryen",
+      "name": "DAENERYS TARGARYEN",
+      "category": "fictional",
+      "hints": [
+        "Female",
+        "Fantasy television / novel series era",
+        "White hair + dragons imagery",
+        "Television series (fantasy / drama)",
+        "Essos & Westeros (across continents)",
+        "Exiled princess turned ruler"
+      ],
+      "image": "/images/daenerys-targaryen.png"
+    },
+    {
+      "id": "marie-curie",
+      "name": "MARIE CURIE",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1867–1934",
+        "Often shown in modest dark clothing",
+        "Scientist & academic researcher",
+        "Poland → France",
+        "Pioneering work in radioactivity and scientific discovery"
+      ],
+      "image": "/images/marie-curie.png"
+    },
+    {
+      "id": "leonardo-da-vinci",
+      "name": "LEONARDO DA VINCI",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1452–1519",
+        "Renaissance-era beard and robes",
+        "Artist & inventor",
+        "Italy",
+        "Contributions spanning art, design, and early engineering concepts"
+      ],
+      "image": "/images/leonardo-da-vinci.png"
+    },
+    {
+      "id": "steve-jobs",
+      "name": "STEVE JOBS",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1955–2011",
+        "Turtleneck + minimalist style",
+        "Technology entrepreneur",
+        "United States / California",
+        "Helped popularize modern consumer electronics"
+      ],
+      "image": "/images/steve-jobs.png"
+    },
+    {
+      "id": "malala-yousafzai",
+      "name": "MALALA YOUSAFZAI",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Born 1997 – Living",
+        "Headscarf and youthful appearance",
+        "Education and human rights advocate",
+        "Pakistan → United Kingdom",
+        "Global voice for access to schooling"
+      ],
+      "image": "/images/malala-yousafzai.png"
+    },
+    {
+      "id": "winston-churchill",
+      "name": "WINSTON CHURCHILL",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1874–1965",
+        "Bowler hat + cane imagery",
+        "Political leader and statesman",
+        "United Kingdom",
+        "Leadership during a major 20th-century conflict"
+      ],
+      "image": "/images/winston-churchill.png"
+    },
+    {
+      "id": "nelson-mandela",
+      "name": "NELSON MANDELA",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1918–2013",
+        "Warm smile + patterned shirts",
+        "Political and social leader",
+        "South Africa",
+        "Symbol of reconciliation and democratic reform"
+      ],
+      "image": "/images/nelson-mandela.png"
+    },
+    {
+      "id": "ada-lovelace",
+      "name": "ADA LOVELACE",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1815–1852",
+        "Victorian-era dress",
+        "Mathematician and early computing thinker",
+        "England",
+        "Known for work describing mechanical computation ideas"
+      ],
+      "image": "/images/ada-lovelace.png"
+    },
+    {
+      "id": "alexander-the-great",
+      "name": "ALEXANDER THE GREAT",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Ancient historical era",
+        "Classical armor depictions",
+        "Military ruler",
+        "Macedonia / Eastern Mediterranean",
+        "Led widespread campaigns that reshaped regional borders"
+      ],
+      "image": "/images/alexander-the-great.png"
+    },
+    {
+      "id": "florence-nightingale",
+      "name": "FLORENCE NIGHTINGALE",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1820–1910",
+        "Often shown with a lamp",
+        "Healthcare reformer",
+        "United Kingdom",
+        "Improved practices in medical care environments"
+      ],
+      "image": "/images/florence-nightingale.png"
+    },
+    {
+      "id": "isaac-newton",
+      "name": "ISAAC NEWTON",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1643–1727",
+        "Long curled hair, classical portrait style",
+        "Scientist & mathematician",
+        "England",
+        "Foundational ideas in motion and physical laws"
+      ],
+      "image": "/images/isaac-newton.png"
+    },
+    {
+      "id": "greta-thunberg",
+      "name": "GRETA THUNBERG",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Born 2003 – Living",
+        "Braided hair and simple clothing",
+        "Public speaker and activist",
+        "Sweden",
+        "Known for advocacy surrounding environmental awareness"
+      ],
+      "image": "/images/greta-thunberg.png"
+    },
+    {
+      "id": "mahatma-gandhi",
+      "name": "MAHATMA GANDHI",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1869–1948",
+        "Round glasses + robe",
+        "Political and social movement leader",
+        "India",
+        "Associated with peaceful resistance philosophy"
+      ],
+      "image": "/images/mahatma-gandhi.png"
+    },
+    {
+      "id": "queen-elizabeth-ii",
+      "name": "QUEEN ELIZABETH II",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1926–2022",
+        "Formal attire with crown imagery",
+        "Monarch",
+        "United Kingdom / Commonwealth",
+        "Longest period of modern ceremonial leadership in her nation"
+      ],
+      "image": "/images/queen-elizabeth-ii.png"
+    },
+    {
+      "id": "vincent-van-gogh",
+      "name": "VINCENT VAN GOGH",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1853–1890",
+        "Red-bearded portrait style",
+        "Painter and creative artist",
+        "Netherlands → France",
+        "Recognized for expressive and emotional visual works"
+      ],
+      "image": "/images/van-gogh.png"
+    },
+    {
+      "id": "amy-winehouse",
+      "name": "AMY WINEHOUSE",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1983–2011",
+        "Distinctive hair and retro style",
+        "Singer and performer",
+        "United Kingdom",
+        "Known for soulful vocals and influential music"
+      ],
+      "image": "/images/amy-winehouse.png"
+    },
+    {
+      "id": "neil-armstrong",
+      "name": "NEIL ARMSTRONG",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1930–2012",
+        "Spacesuit imagery",
+        "Aerospace professional",
+        "United States",
+        "Connected to a major milestone in human exploration"
+      ],
+      "image": "/images/neil-armstrong.png"
+    },
+    {
+      "id": "cleopatra",
+      "name": "CLEOPATRA",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Ancient Mediterranean era",
+        "Royal attire and classical iconography",
+        "Political ruler",
+        "Egypt",
+        "Associated with diplomacy and powerful alliances"
+      ],
+      "image": "/images/cleopatra.png"
+    },
+    {
+      "id": "pablo-picasso",
+      "name": "PABLO PICASSO",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1881–1973",
+        "Older man with striped shirts in photos",
+        "Visual artist",
+        "Spain → France",
+        "Helped redefine modern artistic movements"
+      ],
+      "image": "/images/picasso.png"
+    },
+    {
+      "id": "harriet-tubman",
+      "name": "HARRIET TUBMAN",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1822–1913",
+        "Historic period clothing in portraits",
+        "Humanitarian and guide",
+        "United States",
+        "Assisted others seeking personal freedom and safety"
+      ],
+      "image": "/images/harriet-tubman.png"
+    },
+    {
+      "id": "serena-williams",
+      "name": "SERENA WILLIAMS",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Born 1981 – Living",
+        "Athletic apparel and court imagery",
+        "Professional athlete",
+        "United States",
+        "Dominant achievements in individual competitive sport"
+      ],
+      "image": "/images/serena-williams.png"
+    },
+    {
+      "id": "frodo-baggins",
+      "name": "FRODO BAGGINS",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Mid-20th century fantasy literature era",
+        "Small stature with simple traveling clothes",
+        "Books + film adaptations",
+        "Peaceful countryside realm",
+        "Reluctant traveler carrying a great responsibility"
+      ],
+      "image": "/images/frodo-baggins.png"
+    },
+    {
+      "id": "darth-vader",
+      "name": "DARTH VADER",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Late-20th century sci-fi film era",
+        "Dark armor with mechanical breathing imagery",
+        "Movie franchise (science fiction)",
+        "Galactic empire setting",
+        "Powerful figure torn between loyalty and identity"
+      ],
+      "image": "/images/darth-vader.png"
+    },
+    {
+      "id": "hermione-granger",
+      "name": "HERMIONE GRANGER",
+      "category": "fictional",
+      "hints": [
+        "Female",
+        "Late-1990s fantasy book era",
+        "Curly hair and school-style attire",
+        "Book → film series",
+        "Magical academy environment",
+        "Highly intelligent problem-solver in a close-knit trio"
+      ],
+      "image": "/images/hermione-granger.png"
+    },
+    {
+      "id": "sherlock-holmes",
+      "name": "SHERLOCK HOLMES",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "19th-century detective fiction era",
+        "Coat + classic hat in many depictions",
+        "Literature with many adaptations",
+        "Historic European city setting",
+        "Logical investigator known for sharp deduction"
+      ],
+      "image": "/images/sherlock-holmes.png"
+    },
+    {
+      "id": "katniss-everdeen",
+      "name": "KATNISS EVERDEEN",
+      "category": "fictional",
+      "hints": [
+        "Female",
+        "2010s dystopian novel + film era",
+        "Bow-carrying survival look",
+        "Book → movie series",
+        "Divided futuristic society",
+        "Resourceful competitor who becomes a symbol"
+      ],
+      "image": "/images/katniss-everdeen.png"
+    },
+    {
+      "id": "rick-grimes",
+      "name": "RICK GRIMES",
+      "category": "fictional",
+      "hints": [
+          "Male",
+          "2010s television drama era",
+          "Sheriff-style clothing and rugged appearance",
+          "Television series",
+          "Post-collapse world",
+          "Reluctant leader protecting a small community"
+      ],
+      "image": "/images/rick-grimes.png"
+    },
+    {
+      "id": "arthur-morgan",
+      "name": "ARTHUR MORGAN",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Modern open-world video game era",
+        "Old-west clothing and frontier gear",
+        "Video game",
+        "Expansive rural frontier world",
+        "Morally conflicted outlaw in a fading era"
+      ],
+      "image": "/images/arthur-morgan.png"
+    },
+    {
+      "id": "lara-croft",
+      "name": "LARA CROFT",
+      "category": "fictional",
+      "hints": [
+        "Female",
+        "1990s action-adventure game era",
+        "Explorer-style outfit with travel gear",
+        "Video game → film adaptations",
+        "Global archeological expedition settings",
+        "Adventurer seeking ancient mysteries"
+      ],
+      "image": "/images/lara-croft.png"
+    },
+    {
+      "id": "gandalf",
+      "name": "GANDALF",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Classic fantasy literature era",
+        "Long beard and staff imagery",
+        "Books + films",
+        "Mythic medieval-style world",
+        "Wise guide who aids heroic journeys"
+      ],
+      "image": "/images/gandalf.png"
+    },
+    {
+      "id": "buzz-lightyear",
+      "name": "BUZZ LIGHTYEAR",
+      "category": "fictional",
+      "hints": [
+        "Male (toy character)",
+        "1990s animated film era",
+        "Space-style suit with buttons",
+        "Animated movie franchise",
+        "Child’s imaginative play world",
+        "Confident figure who believes in cosmic missions"
+      ],
+      "image": "/images/buzz-lightyear.png"
+    },
+    {
+      "id": "joker",
+      "name": "THE JOKER",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Comic-book era with many retellings",
+        "Colorful suit with dramatic facial style",
+        "Comics → films → television",
+        "Gritty urban setting",
+        "Chaotic antagonist challenging societal order"
+      ],
+      "image": "/images/joker.png"
+    },
+    {
+      "id": "elsa",
+      "name": "ELSA",
+      "category": "fictional",
+      "hints": [
+        "Female",
+        "2010s animated film era",
+        "Blue dress and winter-themed imagery",
+        "Animated movie",
+        "Snow-covered kingdom setting",
+        "Reserved royal figure learning self-control"
+      ],
+      "image": "/images/elsa.png"
+    },
+    {
+      "id": "kratos",
+      "name": "KRATOS",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Modern action-fantasy game era",
+        "Armored warrior with symbolic markings",
+        "Video game series",
+        "Myth-inspired northern world",
+        "Battle-hardened figure seeking redemption"
+      ],
+      "image": "/images/kratos.png"
+    },
+    {
+      "id": "shrek",
+      "name": "SHREK",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "2000s animated film era",
+        "Large green fairytale-style figure",
+        "Animated movie series",
+        "Storybook swamp + fantasy lands",
+        "Reluctant loner who finds unlikely friendships"
+      ],
+      "image": "/images/shrek.png"
+    },
+    {
+      "id": "jack-sparrow",
+      "name": "CAPTAIN JACK SPARROW",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "2000s fantasy adventure film era",
+        "Hat, beads, and sea-worn clothing",
+        "Movie franchise",
+        "High-seas world of ships and ports",
+        "Unpredictable wanderer with clever survival instincts"
+      ],
+      "image": "/images/jack-sparrow.png"
+    },
+    {
+      "id": "sonic-the-hedgehog",
+      "name": "SONIC THE HEDGEHOG",
+      "category": "fictional",
+      "hints": [
+        "Male (cartoon mascot)",
+        "1990s platform-game era",
+        "Anthropomorphic blue character",
+        "Video game → animation",
+        "Colorful fantasy landscapes",
+        "Speed-focused hero racing against rivals"
+      ],
+      "image": "/images/sonic.png"
+    },
+    {
+      "id": "samus-aran",
+      "name": "SAMUS ARAN",
+      "category": "fictional",
+      "hints": [
+        "Female",
+        "Classic sci-fi game era",
+        "Futuristic armored suit",
+        "Video game series",
+        "Outer-space exploration environments",
+        "Independent bounty-hunter archetype"
+      ],
+      "image": "/images/samus-aran.png"
+    },
+    {
+      "id": "light-yagami",
+      "name": "LIGHT YAGAMI",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "2000s anime/manga era",
+        "School uniform and notebook imagery",
+        "Manga → anime series",
+        "Modern Japanese city setting",
+        "Strategic anti-hero with a moral obsession"
+      ],
+      "image": "/images/light-yagami.png"
+    },
+    {
+      "id": "geralt-of-rivia",
+      "name": "GERALT OF RIVIA",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Dark-fantasy novel + game era",
+        "White hair and rugged armor",
+        "Books → games → TV series",
+        "Monster-filled medieval world",
+        "Skilled wanderer for hire with stoic personality"
+      ],
+      "image": "/images/geralt.png"
+    },
+    {
+      "id": "spider-man",
+      "name": "SPIDER-MAN",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "1960s comic-book era",
+        "Red-and-blue acrobatic suit",
+        "Comics → films → animation",
+        "Skyscraper-filled city setting",
+        "Everyday hero balancing ordinary life with responsibility"
+      ],
+      "image": "/images/spiderman.png"
+    },
+    {
+      "id": "oprah-winfrey",
+      "name": "OPRAH WINFREY",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Born 1954 – Living",
+        "Professional attire with televised stage settings",
+        "Media host and entrepreneur",
+        "United States",
+        "Became one of the most influential voices in popular culture"
+      ],
+      "image": "/images/oprah-winfrey.png"
+    },
+    {
+      "id": "sigmund-freud",
+      "name": "SIGMUND FREUD",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1856–1939",
+        "Bearded scholar in suit and glasses",
+        "Medical theorist and writer",
+        "Austria",
+        "Introduced influential ideas about human behavior and the mind"
+      ],
+      "image": "/images/sigmund-freud.png"
+    },
+    {
+      "id": "joan-of-arc",
+      "name": "JOAN OF ARC",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Medieval European era",
+        "Armor imagery in historical depictions",
+        "Military and symbolic figure",
+        "France",
+        "Remembered for leadership during a national conflict"
+      ],
+      "image": "/images/joan-of-arc.png"
+    },
+    {
+      "id": "galileo-galilei",
+      "name": "GALILEO GALILEI",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1564–1642",
+        "Aging scholar with robe-style clothing",
+        "Scientist and academic observer",
+        "Italy",
+        "Challenged established views through astronomical study"
+      ],
+      "image": "/images/galileo.png"
+    },
+    {
+      "id": "frida-kahlo",
+      "name": "FRIDA KAHLO",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1907–1954",
+        "Bold clothing and floral imagery in portraits",
+        "Painter and cultural figure",
+        "Mexico",
+        "Created expressive works reflecting identity and resilience"
+      ],
+      "image": "/images/frida-kahlo.png"
+    },
+    {
+      "id": "elon-nhl",
+      "name": "WAYNE GRETZKY",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Born 1961 – Living",
+        "Athletic uniform with ice-rink settings",
+        "Professional athlete",
+        "Canada",
+        "Widely regarded as one of the greatest performers in his sport"
+      ],
+      "image": "/images/wayne-gretzky.png"
+    },
+    {
+      "id": "rosa-parks",
+      "name": "ROSA PARKS",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1913–2005",
+        "Simple dress and glasses in archival photos",
+        "Civil rights participant",
+        "United States",
+        "Became a symbol of resistance through a quiet act of defiance"
+      ],
+      "image": "/images/rosa-parks.png"
+    },
+    {
+      "id": "julius-caesar",
+      "name": "JULIUS CAESAR",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Ancient classical era",
+        "Laurel wreath iconography",
+        "Military and political ruler",
+        "Roman Republic",
+        "Central to dramatic power shifts in early European history"
+      ],
+      "image": "/images/julius-caesar.png"
+    },
+    {
+      "id": "stephen-hawking",
+      "name": "STEPHEN HAWKING",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1942–2018",
+        "Wheelchair and lecture-hall imagery",
+        "Theoretical scientist and author",
+        "United Kingdom",
+        "Communicated complex ideas about the universe to the public"
+      ],
+      "image": "/images/stephen-hawking.png"
+    },
+    {
+      "id": "muhammad-ali",
+      "name": "MUHAMMAD ALI",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1942–2016",
+        "Athletic stance with gloves",
+        "Professional sports competitor",
+        "United States",
+        "Renowned both for victory in competition and cultural influence"
+      ],
+      "image": "/images/muhammad-ali.png"
+    },
+    {
+      "id": "catherine-the-great",
+      "name": "CATHERINE THE GREAT",
+      "category": "real",
+      "hints": [
+        "Female",
+        "18th-century imperial era",
+        "Royal garments and palace imagery",
+        "Monarch and reformer",
+        "Russian Empire",
+        "Oversaw political expansion and cultural development"
+      ],
+      "image": "/images/catherine-the-great.png"
+    },
+    {
+      "id": "charles-darwin",
+      "name": "CHARLES DARWIN",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1809–1882",
+        "Full beard and naturalist imagery",
+        "Scientist and field researcher",
+        "United Kingdom",
+        "Proposed influential ideas about life and adaptation"
+      ],
+      "image": "/images/charles-darwin.png"
+    },
+    {
+      "id": "anne-frank",
+      "name": "ANNE FRANK",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1929–1945",
+        "Youthful portrait photographs",
+        "Writer and diarist",
+        "Netherlands",
+        "Her personal account became a powerful historical testimony"
+      ],
+      "image": "/images/anne-frank.png"
+    },
+    {
+      "id": "benjamin-franklin",
+      "name": "BENJAMIN FRANKLIN",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1706–1790",
+        "Colonial-era coat and spectacles",
+        "Writer, inventor, and statesman",
+        "United States",
+        "Played a key role in political founding and scientific curiosity"
+      ],
+      "image": "/images/benjamin-franklin.png"
+    },
+    {
+      "id": "mother-teresa",
+      "name": "MOTHER TERESA",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1910–1997",
+        "White garment with blue-striped accents",
+        "Missionary and humanitarian worker",
+        "Albania → India",
+        "Dedicated life to care for vulnerable communities"
+      ],
+      "image": "/images/mother-teresa.png"
+    },
+    {
+      "id": "amadeus-mozart",
+      "name": "WOLFGANG AMADEUS MOZART",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1756–1791",
+        "Ornate classical composer attire",
+        "Musician and composer",
+        "Austria",
+        "Created highly influential works in European music"
+      ],
+      "image": "/images/mozart.png"
+    },
+    {
+      "id": "simone-biles",
+      "name": "SIMONE BILES",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Born 1997 – Living",
+        "Athletic leotard imagery",
+        "Elite athlete",
+        "United States",
+        "Set new performance standards in competitive gymnastics"
+      ],
+      "image": "/images/simone-biles.png"
+    },
+    {
+      "id": "niccolo-machiavelli",
+      "name": "NICCOLO MACHIAVELLI",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1469–1527",
+        "Renaissance-era scholar artwork",
+        "Political philosopher and writer",
+        "Italy",
+        "Known for pragmatic ideas about leadership and power"
+      ],
+      "image": "/images/machiavelli.png"
+    },
+    {
+      "id": "haruki-murakami",
+      "name": "HARUKI MURAKAMI",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Born 1949 – Living",
+        "Casual modern portrait photography",
+        "Novelist and storyteller",
+        "Japan",
+        "Blends surreal tone and introspective themes in literature"
+      ],
+      "image": "/images/haruki-murakami.png"
+    },
+    {
+    "id": "peter-parker",
+    "name": "PETER PARKER",
+    "category": "fictional",
+    "hints": [
+      "Male",
+      "1960s comic-book era",
+      "Casual clothing + camera in many depictions",
+      "Comics → films → animation",
+      "Large modern city setting",
+      "Young hero balancing ordinary life with hidden identity"
+    ],
+    "image": "/images/peter-parker.png"
+  },
+  {
+    "id": "princess-leia",
+    "name": "PRINCESS LEIA",
+    "category": "fictional",
+    "hints": [
+      "Female",
+      "Late-20th century sci-fi film era",
+      "White outfit + distinctive hairstyle",
+      "Movie franchise",
+      "Intergalactic rebellion setting",
+      "Resilient leader in a resistance movement"
+    ],
+    "image": "/images/princess-leia.png"
+  },
+  {
+    "id": "arthur-weasley",
+    "name": "ARTHUR WEASLEY",
+    "category": "fictional",
+    "hints": [
+      "Male",
+      "1990s fantasy novel era",
+      "Kind-faced man with worn sweater imagery",
+      "Books → films",
+      "Magical British world",
+      "Gentle-natured family patriarch working in government"
+    ],
+    "image": "/images/arthur-weasley.png"
+  },
+  {
+    "id": "jon-snow",
+    "name": "JON SNOW",
+    "category": "fictional",
+    "hints": [
+      "Male",
+      "Fantasy TV/novel era",
+      "Dark clothing with fur cloak imagery",
+      "Books → TV series",
+      "Frozen northern frontier setting",
+      "Quiet protector caught between duty and loyalty"
+    ],
+    "image": "/images/jon-snow.png"
+  },
+  {
+    "id": "princess-peach",
+    "name": "PRINCESS PEACH",
+    "category": "fictional",
+    "hints": [
+      "Female",
+      "Classic video-game era",
+      "Pink dress and crown imagery",
+      "Video games → animation",
+      "Colorful fantasy kingdom",
+      "Royal figure often central to heroic rescues"
+    ],
+    "image": "/images/princess-peach.png"
+  },
+  {
+    "id": "tony-stark",
+    "name": "TONY STARK",
+    "category": "fictional",
+    "hints": [
+      "Male",
+      "Comic-book era with modern film adaptations",
+      "Stylish suit + facial hair",
+      "Comics → films",
+      "High-tech global setting",
+      "Brilliant inventor turned unlikely hero"
+    ],
+    "image": "/images/tony-stark.png"
+  },
+  {
+    "id": "bruce-wayne",
+    "name": "BRUCE WAYNE",
+    "category": "fictional",
+    "hints": [
+      "Male",
+      "Classic comic-book era",
+      "Formal suit in public life",
+      "Comics → films → animation",
+      "Dark gothic-style city",
+      "Wealthy recluse living a double life"
+    ],
+    "image": "/images/bruce-wayne.png"
+  },
+  {
+    "id": "harley-quinn",
+    "name": "HARLEY QUINN",
+    "category": "fictional",
+    "hints": [
+      "Female",
+      "1990s animated-series era",
+      "Colorful costume + playful aesthetic",
+      "Comics → films → animation",
+      "Chaotic urban crime world",
+      "Unpredictable anti-hero with rebellious attitude"
+    ],
+    "image": "/images/harley-quinn.png"
+  },
+  {
+    "id": "bellatrix-lestrange",
+    "name": "BELLATRIX LESTRANGE",
+    "category": "fictional",
+    "hints": [
+      "Female",
+      "Fantasy novel + film era",
+      "Wild dark hair and gothic attire",
+      "Books → films",
+      "Magical world with aristocratic families",
+      "Fanatically loyal follower of a dark cause"
+    ],
+    "image": "/images/bellatrix-lestrange.png"
+  },
+  {
+    "id": "geralt-of-rivia-alt",
+    "name": "GERALT OF RIVIA",
+    "category": "fictional",
+    "hints": [
+      "Male",
+      "Dark-fantasy novel/game era",
+      "White hair and rugged armor",
+      "Books → games → TV series",
+      "Monster-filled medieval world",
+      "Stoic wanderer who hunts dangerous creatures"
+    ],
+    "image": "/images/geralt.png"
+  },
+  {
+      "id": "harry-potter",
+      "name": "HARRY POTTER",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "1990s fantasy novel era",
+        "Glasses and school-uniform imagery",
+        "Books → films",
+        "British magical world",
+        "Quiet student drawn into a larger destiny"
+      ],
+      "image": "/images/harry-potter.png"
+    },
+    {
+      "id": "luke-skywalker",
+      "name": "LUKE SKYWALKER",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "1970s space-adventure film era",
+        "Light-colored tunic and heroic stance",
+        "Movie franchise",
+        "Outer-galaxy rebellion setting",
+        "Hopeful young hero seeking guidance"
+      ],
+      "image": "/images/luke-skywalker.png"
+    },
+    {
+      "id": "homer-simpson",
+      "name": "HOMER SIMPSON",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "1980s animated-sitcom era",
+        "Round cartoon figure in white shirt",
+        "Animated TV series",
+        "Suburban American town setting",
+        "Well-meaning father with careless habits"
+      ],
+      "image": "/images/homer-simpson.png"
+    },
+    {
+      "id": "scooby-doo",
+      "name": "SCOOBY DOO",
+      "category": "fictional",
+      "hints": [
+        "Male (talking animal character)",
+        "Classic animated-series era",
+        "Brown cartoon dog with collar",
+        "Animated TV → films",
+        "Mystery-solving adventure settings",
+        "Lovable companion afraid of spooky situations"
+      ],
+      "image": "/images/scooby-doo.png"
+    },
+    {
+      "id": "indiana-jones",
+      "name": "INDIANA JONES",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "1980s adventure-film era",
+        "Hat, jacket, and rugged explorer look",
+        "Movie franchise",
+        "Global archeological expedition settings",
+        "Academic adventurer chasing lost history"
+      ],
+      "image": "/images/indiana-jones.png"
+    },
+    {
+      "id": "elsa-arendelle",
+      "name": "ELSA OF ARENDELLE",
+      "category": "fictional",
+      "hints": [
+        "Female",
+        "2010s animated-film era",
+        "Blue dress and winter-themed design",
+        "Animated movie",
+        "Snow-covered royal kingdom",
+        "Reserved ruler learning to control inner power"
+      ],
+      "image": "/images/elsa-arendelle.png"
+    },
+    {
+      "id": "black-panther",
+      "name": "BLACK PANTHER",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Comic-book era with modern films",
+        "Sleek suit with cat-themed mask",
+        "Comics → films",
+        "High-tech African kingdom",
+        "Noble leader balancing tradition and responsibility"
+      ],
+      "image": "/images/black-panther.png"
+    },
+    {
+      "id": "buzz-lightyear-alt",
+      "name": "BUZZ LIGHTYEAR",
+      "category": "fictional",
+      "hints": [
+        "Male (toy character)",
+        "1990s animated-film era",
+        "Space-ranger suit with buttons",
+        "Animated movie series",
+        "Child’s imaginative play world",
+        "Confident hero who believes in cosmic missions"
+      ],
+      "image": "/images/buzz-lightyear.png"
+    },
+    {
+      "id": "joker-clown-prince",
+      "name": "THE JOKER",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Comic-book era with many adaptations",
+        "Colorful suit and theatrical expression",
+        "Comics → films → TV",
+        "Dark urban crime setting",
+        "Unpredictable antagonist challenging order"
+      ],
+      "image": "/images/the-joker.png"
+    },
+    {
+      "id": "dorothy-gale",
+      "name": "DOROTHY GALE",
+      "category": "fictional",
+      "hints": [
+        "Female",
+        "Classic fantasy-film era",
+        "Simple dress with braided hair imagery",
+        "Book → film",
+        "Colorful magical land",
+        "Determined traveler trying to find her way home"
+      ],
+      "image": "/images/dorothy-gale.png"
     }
   ]
 }

@@ -3,19 +3,19 @@ import React from 'react'
 const REAL_HINT_QUESTIONS = [
   'Man or Woman?',
   'Born – Died / Era?',
-  'Main role or occupation?',
-  'Famous for what?',
-  'Country or region?',
   'Visual description',
+  'Main role or occupation?',
+  'Country or region?',
+  'Famous for what?',
 ]
 
 const FICTIONAL_HINT_QUESTIONS = [
   'Man or Woman?',
   'When created / main era?',
-  'Role? (wizard, superhero, etc.)',
+  'Visual description',
   'Medium? (book, movie, game, comic)',
   'World / setting?',
-  'Visual description',
+  'Role? (wizard, superhero, etc.)',
 ]
 
 export default function HintList({ category, hints, revealedCount }) {

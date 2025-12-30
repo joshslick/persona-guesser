@@ -4,101 +4,100 @@ export const realPersonas = [
     name: 'ALBERT EINSTEIN',
     category: 'real',
     hints: [
-      'Male',
-      '1879–1955',
-      'Theoretical physicist',
-      'Theory of relativity, modern physics',
-      'Germany → Switzerland → United States',
-      'Wild hair + mustache silhouette',
+      'Male',                                       // gender
+      '1879–1955',                                  // era
+      'Wild hair + mustache silhouette',            // visual
+      'Theoretical physicist',                      // main role
+      'Germany → Switzerland → United States',      // region
+      'Theory of relativity, modern physics',       // famous for
     ],
     image: '/images/einstein.png',
   },
   {
-  id: 'martin-luther-king-jr',
-  name: 'MARTIN LUTHER KING',
-  category: 'real',
-  hints: [
-    'Male',
-    '1929–1968',
-    'Baptist minister & civil rights leader',
-    'Led nonviolent movement for racial equality',
-    'United States / Atlanta, Georgia',
-    'Often shown speaking at a podium in a suit',
-  ],
-  image: '/images/MLK.png',
-},
+    id: 'martin-luther-king-jr',
+    name: 'MARTIN LUTHER KING',
+    category: 'real',
+    hints: [
+      'Male',                                       // gender
+      '1929–1968',                                  // era
+      'Often shown speaking at a podium in a suit', // visual
+      'Baptist minister & civil rights leader',     // main role
+      'United States / Atlanta, Georgia',           // region
+      'Led nonviolent movement for racial equality',// famous for
+    ],
+    image: '/images/MLK.png',
+  },
   {
-  id: 'elon-musk',
-  name: 'ELON MUSK',
+  id: 'winston-churchill',
+  name: 'WINSTON CHURCHILL',
   category: 'real',
   hints: [
-    'Male',
-    'Born 1971 – Living',
-    'Entrepreneur & engineer',
-    'Electric vehicles, private spaceflight, innovative technology companies',
-    'South Africa → Canada → United States',
-    'Short hair, suit or jacket, tech-industry appearance',
+    'Male',                                       // gender
+    '1874–1965',                                  // era
+    'Bowler hat + cigar or cane imagery',         // visual
+    'Political leader & wartime prime minister',  // main role
+    'United Kingdom',                             // region
+    'Known for leadership and speeches during World War II', // famous for
   ],
-  image: '/images/elon-musk.png',
+  image: '/images/winston-churchill.png',
   },
   {
     id: 'nikola-tesla',
     name: 'NIKOLA TESLA',
     category: 'real',
     hints: [
-      'Male',
-      '1856–1943',
-      'Inventor & electrical engineer',
-      'Alternating current & electrical innovation',
-      'Serbia → United States',
-      'Slicked hair + coil / lightning',
+      'Male',                                       // gender
+      '1856–1943',                                  // era
+      'Slicked hair + coil / lightning',            // visual
+      'Inventor & electrical engineer',             // main role
+      'Serbia → United States',                     // region
+      'Alternating current & electrical innovation',// famous for
     ],
     image: '/images/nikola-tesla.png',
   },
   {
-  id: 'franklin-roosevelt',
-  name: 'FRANKLIN DELANO ROOSEVELT',
-  category: 'real',
-  hints: [
-    'Male',
-    '1882–1945',
-    'Political leader & U.S. President',
-    'Led the U.S. through the Great Depression and World War II',
-    'United States / New York',
-    'Round glasses + cigarette holder imagery',
-  ],
-  image: '/images/franklin-roosevelt.png',
-  },
-  {
-    id: 'joe-biden',
-    name: 'JOSEPH BIDEN',
+    id: 'franklin-roosevelt',
+    name: 'FRANKLIN DELANO ROOSEVELT',
     category: 'real',
     hints: [
-      'Male',
-      'Born 1942',
-      'Political leader',
-      'President of the United States',
-      'United States / Delaware connection',
-      'Short hair + suit',
+      'Male',                                       // gender
+      '1882–1945',                                  // era
+      'Round glasses + cigarette holder imagery',   // visual
+      'Political leader & U.S. President',          // main role
+      'United States / New York',                   // region
+      'Led the U.S. through the Great Depression and World War II', // famous for
     ],
-    image: '/images/joe-biden.png',
+    image: '/images/franklin-roosevelt.png',
+  },
+  {
+  id: 'alexander-the-great',
+  name: 'ALEXANDER THE GREAT',
+  category: 'real',
+  hints: [
+    'Male',                                       // gender
+    'Ancient classical era (356–323 BC)',         // era
+    'Classical armor + laurel or cloak imagery',  // visual
+    'Military commander & monarch',               // main role
+    'Macedonia / Eastern Mediterranean',          // region
+    'Led expansive conquests that reshaped world empires', // famous for
+  ],
+  image: '/images/alexander-the-great.png',
   },
   {
     id: 'charlie-kirk',
     name: 'CHARLIE KIRK',
     category: 'real',
     hints: [
-      'Male',
-      '1993-2025',
-      'Political commentator / activist',
-      'Known for media + public speaking work',
-      'United States',
-      'Short hair + microphone',
+      'Male',                                       // gender
+      'Born 1993 – Living',                         // era
+      'Short hair + microphone',                    // visual
+      'Political commentator / activist',           // main role
+      'United States',                              // region
+      'Known for media + public speaking work',     // famous for
     ],
     image: '/images/charlie-kirk.png',
   },
 ]
-
 
 export const fictionalPersonas = [
   {
@@ -106,12 +105,12 @@ export const fictionalPersonas = [
     name: 'JESSE PINKMAN',
     category: 'fictional',
     hints: [
-      'Male',
-      '2000s TV drama era',
-      'Streetwise partner / anti-hero',
-      'Television series (crime drama)',
-      'American Southwest setting',
-      'Beanie hat + hoodie',
+      'Male',                                       // gender
+      '2000s TV drama era',                        // era
+      'Beanie hat + hoodie',                       // visual
+      'Television series (crime drama)',           // medium
+      'American Southwest setting',                // setting
+      'Streetwise partner / anti-hero',            // role
     ],
     image: '/images/jesse-pinkman.png',
   },
@@ -120,40 +119,40 @@ export const fictionalPersonas = [
     name: 'TONY SOPRANO',
     category: 'fictional',
     hints: [
-      'Male',
-      'Late 1990s–2000s TV era',
-      'Crime family leader / complex protagonist',
-      'Television series (drama)',
-      'New Jersey suburban + mafia setting',
-      'Silhouette in suit with cigar',
+      'Male',                                       // gender
+      'Late 1990s–2000s TV era',                   // era
+      'Silhouette in suit with cigar',             // visual
+      'Television series (drama)',                 // medium
+      'New Jersey suburban + mafia setting',       // setting
+      'Crime family leader / complex protagonist', // role
     ],
     image: '/images/tony-soprano.png',
   },
   {
-  id: 'daenerys-targaryen',
-  name: 'DAENERYS TARGARYEN',
-  category: 'fictional',
-  hints: [
-    'Female',
-    'Fantasy television / novel series era',
-    'Exiled princess turned ruler',
-    'Television series (fantasy / drama)',
-    'Essos & Westeros (across continents)',
-    'White hair + dragons imagery',
-  ],
-  image: '/images/daenerys-targaryen.png',
+    id: 'daenerys-targaryen',
+    name: 'DAENERYS TARGARYEN',
+    category: 'fictional',
+    hints: [
+      'Female',                                     // gender
+      'Fantasy television / novel series era',      // era
+      'White hair + dragons',               // visual
+      'Television series (fantasy / drama)',        // medium
+      'Essos & Westeros (across continents)',       // setting
+      'Exiled princess turned ruler',               // role
+    ],
+    image: '/images/daenerys-targaryen.png',
   },
   {
     id: 'michael-scott',
     name: 'MICHAEL SCOTT',
     category: 'fictional',
     hints: [
-      'Male',
-      '2000s sitcom era',
-      'Office manager / comedic lead',
-      'Television comedy series',
-      'Scranton, Pennsylvania workplace setting',
-      'Suit with goofy posture',
+      'Male',                                       // gender
+      '2000s sitcom era',                          // era
+      'Suit with goofy posture',                   // visual
+      'Television comedy series',                  // medium
+      'Scranton, Pennsylvania workplace setting',  // setting
+      'Office manager / comedic lead',             // role
     ],
     image: '/images/michael-scott.png',
   },
@@ -162,12 +161,12 @@ export const fictionalPersonas = [
     name: 'ARAGORN',
     category: 'fictional',
     hints: [
-      'Male',
-      'Fantasy novel + film era',
-      'Ranger / warrior / reluctant king',
-      'Books + movie trilogy',
-      'Middle-earth world setting',
-      'Cloak + sword',
+      'Male',                                       // gender
+      'Fantasy novel + film era',                  // era
+      'Cloak + sword',                             // visual
+      'Books + movie trilogy',                     // medium
+      'Middle-earth world setting',                // setting
+      'Ranger / warrior / reluctant king',         // role
     ],
     image: '/images/aragorn.png',
   },
@@ -176,28 +175,27 @@ export const fictionalPersonas = [
     name: 'SPONGEBOB SQUAREPANTS',
     category: 'fictional',
     hints: [
-      'Male',
-      '1990s–2000s animated era',
-      'Optimistic fast-food worker',
-      'Animated TV series',
-      'Underwater cartoon town setting',
-      'Square body + smiling',
+      'Male',                                       // gender
+      '1990s–2000s animated era',                  // era
+      'Square body + smiling',                     // visual
+      'Animated TV series',                        // medium
+      'Underwater cartoon town setting',           // setting
+      'Optimistic fast-food worker',               // role
     ],
     image: '/images/spongebob.png',
   },
   {
-  id: 'patrick-bateman',
-  name: 'PATRICK BATEMAN',
-  category: 'fictional',
-  hints: [
-    'Male',
-    '1980s–1990s novel + film era',
-    'Wealthy professional with double life',
-    'Book → film adaptation (psychological thriller)',
-    'Manhattan / corporate luxury setting',
-    'Suit + slicked hair + briefcase',
-  ],
-  image: '/images/patrick-bateman.png',
+    id: 'patrick-bateman',
+    name: 'PATRICK BATEMAN',
+    category: 'fictional',
+    hints: [
+      'Male',                                       // gender
+      '1980s–1990s novel + film era',              // era
+      'Suit + slicked hair + briefcase',           // visual
+      'Book → film adaptation (psychological thriller)', // medium
+      'Manhattan / corporate luxury setting',      // setting
+      'Wealthy professional with double life',     // role
+    ],
+    image: '/images/patrick-bateman.png',
   },
 ]
-
