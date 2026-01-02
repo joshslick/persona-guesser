@@ -2,8 +2,10 @@ import React, { useState, useMemo, useEffect, useCallback } from 'react'
 import NameDisplay from './NameDisplay'
 import HintList from './HintList'
 import Keyboard from './Keyboard'
+import { useAuth } from './AuthContext'
 
 const MAX_WRONG_GUESSES = 6
+const MAX_GUEST_PRACTICE_ROUNDS = 2
 
 function normalizeLetter(ch) {
   const code = ch.toUpperCase().charCodeAt(0)
@@ -34,42 +36,81 @@ function createShuffledIndices(length) {
   return arr
 }
 
-export default function PracticeGamePage({ personas, onBackHome }) {
+function getPracticeKey() {
+  const today = new Date().toISOString().slice(0, 10) // 'YYYY-MM-DD'
+  return `personaGuesser:practice:${today}`
+}
+
+export default function PracticeGamePage({
+  personas,
+  onBackHome,
+  onRequireSignup,
+}) {
   const [currentPersona, setCurrentPersona] = useState(null)
   const [guessedLetters, setGuessedLetters] = useState(() => new Set())
   const [wrongLetters, setWrongLetters] = useState(() => new Set())
   const [revealedHintCount, setRevealedHintCount] = useState(1)
   const [gameStatus, setGameStatus] = useState('playing') // 'playing' | 'won' | 'lost'
 
+  const { user } = useAuth()
+  const [playsToday, setPlaysToday] = useState(0)
+
   // Order state for “go through all personas in a random cycle”
-  const [order, setOrder] = useState([])        // array of indices into personas
-  const [orderPos, setOrderPos] = useState(0)   // current position in order
+  const [order, setOrder] = useState([]) // array of indices into personas
+  const [orderPos, setOrderPos] = useState(0) // current position in order
 
   const uniqueLetters = useMemo(
     () => (currentPersona ? getUniqueLetters(currentPersona.name) : new Set()),
     [currentPersona]
   )
 
-  // Initialize / reinitialize the random order when personas change
-  const reseedOrder = useCallback(() => {
-    if (!personas || personas.length === 0) {
-      setOrder([])
-      setOrderPos(0)
-      setCurrentPersona(null)
+  // Load guest practice count when component mounts or when user changes
+  useEffect(() => {
+    if (user) {
+      // logged-in users: ignore guest limit
+      setPlaysToday(0)
       return
     }
+    const key = getPracticeKey()
+    const stored = parseInt(localStorage.getItem(key) || '0', 10)
+    setPlaysToday(stored)
+  }, [user])
 
-    const indices = createShuffledIndices(personas.length)
-    setOrder(indices)
+  const incrementGuestPracticeCount = useCallback(() => {
+  if (user) return // don't track for logged-in users
+
+  const key = getPracticeKey()
+
+  setPlaysToday((prev) => {
+    const stored = parseInt(localStorage.getItem(key) || '0', 10)
+    const base = Number.isNaN(stored) ? 0 : stored
+    const next = base + 1
+    localStorage.setItem(key, String(next))
+    return next
+  })
+}, [user])
+
+  // Initialize / reinitialize the random order when personas change
+  const reseedOrder = useCallback(() => {
+  if (!personas || personas.length === 0) {
+    setOrder([])
     setOrderPos(0)
+    setCurrentPersona(null)
+    return
+  }
 
-    const firstPersona = personas[indices[0]]
-    setCurrentPersona(firstPersona)
-    setGuessedLetters(new Set())
-    setWrongLetters(new Set())
-    setRevealedHintCount(1)
-    setGameStatus('playing')
-  }, [personas])
+  const indices = createShuffledIndices(personas.length)
+  setOrder(indices)
+  setOrderPos(0)
+
+  const firstPersona = personas[indices[0]]
+  setCurrentPersona(firstPersona)
+  setGuessedLetters(new Set())
+  setWrongLetters(new Set())
+  setRevealedHintCount(1)
+  setGameStatus('playing')
+    
+  }, [personas, user])
 
   useEffect(() => {
     reseedOrder()
@@ -105,6 +146,22 @@ export default function PracticeGamePage({ personas, onBackHome }) {
     setGameStatus('playing')
   }, [personas, order, orderPos, reseedOrder])
 
+  // Wrapper that enforces guest limit before starting a new game
+  const handleStartNewGame = useCallback(() => {
+    if (!user && playsToday >= MAX_GUEST_PRACTICE_ROUNDS) {
+      if (onRequireSignup) {
+        onRequireSignup()
+      }
+      return
+    }
+
+    startNewGame()
+
+    if (!user) {
+      incrementGuestPracticeCount()
+    }
+  }, [user, playsToday, startNewGame, incrementGuestPracticeCount, onRequireSignup])
+
   const handleLetterClick = useCallback(
     (letter) => {
       if (!currentPersona || gameStatus !== 'playing') return
@@ -132,7 +189,7 @@ export default function PracticeGamePage({ personas, onBackHome }) {
           setGameStatus('won')
         }
       } else {
-        // ❌ Wrong guess
+        //  Wrong guess
         const nextWrong = new Set(wrongLetters)
         nextWrong.add(upper)
         setWrongLetters(nextWrong)
@@ -147,7 +204,7 @@ export default function PracticeGamePage({ personas, onBackHome }) {
         // Lose after 6 wrong guesses
         if (nextWrong.size >= MAX_WRONG_GUESSES) {
           const stillMissing = Array.from(personaLetters).some(
-            (ch) => !guessedLetters.has(ch),
+            (ch) => !guessedLetters.has(ch)
           )
           if (stillMissing) {
             setGameStatus('lost')
@@ -199,6 +256,19 @@ export default function PracticeGamePage({ personas, onBackHome }) {
               <span className="badge-dot" />
               <span>Practice with previous days</span>
             </div>
+            {!user && (
+              <p
+                style={{
+                  marginTop: '0.25rem',
+                  fontSize: '0.8rem',
+                  color: '#6b7280',
+                }}
+              >
+                {' '}
+                {}
+                {}
+              </p>
+            )}
           </div>
           <div style={{ display: 'flex', gap: '0.5rem' }}>
             <button className="button-secondary" onClick={onBackHome}>
@@ -207,7 +277,7 @@ export default function PracticeGamePage({ personas, onBackHome }) {
             <button
               className="button-primary"
               type="button"
-              onClick={startNewGame}
+              onClick={handleStartNewGame}
             >
               Start new game
             </button>

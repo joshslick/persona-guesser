@@ -2,7 +2,7 @@ import React, { useMemo, useState, useEffect } from "react";
 import NameDisplay from "./NameDisplay";
 import HintList from "./HintList";
 import Keyboard from "./Keyboard";
-
+import { recordDailyPlay } from "./ProfileService";
 const MAX_WRONG_GUESSES = 6;
 
 function getDayIndex() {
@@ -51,7 +51,7 @@ export default function GamePage({ mode, personas, onBackHome }) {
   const [revealedHintCount, setRevealedHintCount] = useState(1);
   const [gameStatus, setGameStatus] = useState("playing"); // 'playing' | 'won' | 'lost'
   const [showResultModal, setShowResultModal] = useState(false);
-
+  const [hasRecordedStreak, setHasRecordedStreak] = useState(false);
   const uniqueLetters = useMemo(() => {
     return todayPersona ? getUniqueLetters(todayPersona.name) : new Set();
   }, [todayPersona]);
@@ -109,7 +109,7 @@ export default function GamePage({ mode, personas, onBackHome }) {
 
     const personaLetters = uniqueLetters;
 
-    // ✅ Correct guess
+    // Correct guess
     if (personaLetters.has(upper)) {
       const nextGuessed = new Set(guessedLetters);
       nextGuessed.add(upper);
@@ -128,7 +128,7 @@ export default function GamePage({ mode, personas, onBackHome }) {
         setShowResultModal(true); // show popup on win
       }
     } else {
-      // ❌ Wrong guess
+      // Wrong guess
       const nextWrong = new Set(wrongLetters);
       nextWrong.add(upper);
       setWrongLetters(nextWrong);
@@ -152,6 +152,14 @@ export default function GamePage({ mode, personas, onBackHome }) {
       }
     }
   };
+
+  // When the player wins, record streak once
+  useEffect(() => {
+  if (gameStatus === "won" && !hasRecordedStreak) {
+    setHasRecordedStreak(true);
+    recordDailyPlay(); // fire and forget
+  }
+}, [gameStatus, hasRecordedStreak]);
 
   // Physical keyboard support
   useEffect(() => {

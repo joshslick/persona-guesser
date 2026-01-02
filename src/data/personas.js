@@ -56,19 +56,19 @@ export const realPersonas = [
     image: '/images/nikola-tesla.png',
   },
   {
-    id: 'franklin-roosevelt',
-    name: 'FRANKLIN DELANO ROOSEVELT',
-    category: 'real',
-    hints: [
-      'Male',                                       // gender
-      '1882–1945',                                  // era
-      'Round glasses + cigarette holder imagery',   // visual
-      'Political leader & U.S. President',          // main role
-      'United States / New York',                   // region
-      'Led the U.S. through the Great Depression and World War II', // famous for
-    ],
-    image: '/images/franklin-roosevelt.png',
-  },
+  id: 'lebron-james',
+  name: 'LEBRON JAMES',
+  category: 'real',
+  hints: [
+    'Male',                                         // gender
+    'Born 1984 — Living',                           // era
+    'Tall athletic build + headband imagery',       // visual
+    'Professional athlete — basketball superstar',  // main role
+    'United States / Ohio & Los Angeles',           // region
+    'Multiple NBA championships & MVP awards; often debated as one of the greatest of all time', // famous for
+  ],
+  image: '/images/lebron-james.png',
+},
   {
   id: 'alexander-the-great',
   name: 'ALEXANDER THE GREAT',
