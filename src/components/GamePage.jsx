@@ -101,6 +101,11 @@ export default function GamePage({ mode, personas, onBackHome }) {
     gameStatus,
   ]);
 
+  useEffect(() => {
+    if (!todayPersona) return;
+    setHasRecordedStreak(false);
+  }, [todayPersona?.id]);
+  
   const handleLetterClick = (letter) => {
     if (!todayPersona || gameStatus !== "playing") return;
 
@@ -155,11 +160,12 @@ export default function GamePage({ mode, personas, onBackHome }) {
 
   // When the player wins, record streak once
   useEffect(() => {
+  if (!todayPersona) return;
   if (gameStatus === "won" && !hasRecordedStreak) {
     setHasRecordedStreak(true);
-    recordDailyPlay(); // fire and forget
+    recordDailyPlay();
   }
-}, [gameStatus, hasRecordedStreak]);
+}, [gameStatus, hasRecordedStreak, todayPersona]);
 
   // Physical keyboard support
   useEffect(() => {
