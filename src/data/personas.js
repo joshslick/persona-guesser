@@ -1,201 +1,188 @@
 export const realPersonas = [
   {
-    id: 'einstein',
-    name: 'ALBERT EINSTEIN',
-    category: 'real',
-    hints: [
-      'Male',                                       // gender
-      '1879–1955',                                  // era
-      'Wild hair + mustache silhouette',            // visual
-      'Theoretical physicist',                      // main role
-      'Germany → Switzerland → United States',      // region
-      'Theory of relativity, modern physics',       // famous for
-    ],
-    image: '/images/einstein.png',
-  },
-  {
-    id: 'martin-luther-king-jr',
-    name: 'MARTIN LUTHER KING',
-    category: 'real',
-    hints: [
-      'Male',                                       // gender
-      '1929–1968',                                  // era
-      'Often shown speaking at a podium in a suit', // visual
-      'Baptist minister & civil rights leader',     // main role
-      'United States / Atlanta, Georgia',           // region
-      'Led nonviolent movement for racial equality',// famous for
-    ],
-    image: '/images/MLK.png',
-  },
-  {
-  id: 'winston-churchill',
-  name: 'WINSTON CHURCHILL',
+  id: 'taylor-swift',
+  name: 'TAYLOR SWIFT',
   category: 'real',
   hints: [
-    'Male',                                       // gender
-    '1874–1965',                                  // era
-    'Bowler hat + cigar or cane imagery',         // visual
-    'Political leader & wartime prime minister',  // main role
-    'United Kingdom',                             // region
-    'Known for leadership and speeches during World War II', // famous for
+    'Female',
+    'Born 1989 — Living',
+    'Microphone + guitar imagery',
+    'Singer-songwriter known for narrative storytelling and genre shifts',
+    'United States / Nashville → global pop culture stage',
+    'Built a massive fan community, re-recorded past work',
   ],
-  image: '/images/winston-churchill.png',
-  },
-  {
-    id: 'nikola-tesla',
-    name: 'NIKOLA TESLA',
-    category: 'real',
-    hints: [
-      'Male',                                       // gender
-      '1856–1943',                                  // era
-      'Slicked hair + coil / lightning',            // visual
-      'Inventor & electrical engineer',             // main role
-      'Serbia → United States',                     // region
-      'Alternating current & electrical innovation',// famous for
-    ],
-    image: '/images/nikola-tesla.png',
-  },
-  {
-  id: 'lebron-james',
-  name: 'LEBRON JAMES',
-  category: 'real',
-  hints: [
-    'Male',                                         // gender
-    'Born 1984 — Living',                           // era
-    'Tall athletic build + headband imagery',       // visual
-    'Professional athlete — basketball superstar',  // main role
-    'United States / Ohio & Los Angeles',           // region
-    'Multiple NBA championships & MVP awards; often debated as one of the greatest of all time', // famous for
-  ],
-  image: '/images/lebron-james.png',
+  image: '/images/taylor-swift.png',
 },
   {
-  id: 'alexander-the-great',
-  name: 'ALEXANDER THE GREAT',
-  category: 'real',
-  hints: [
-    'Male',                                       // gender
-    'Ancient classical era (356–323 BC)',         // era
-    'Classical armor + laurel or cloak imagery',  // visual
-    'Military commander & monarch',               // main role
-    'Macedonia / Eastern Mediterranean',          // region
-    'Led expansive conquests that reshaped world empires', // famous for
-  ],
-  image: '/images/alexander-the-great.png',
-  },
-  {
-    id: 'charlie-kirk',
-    name: 'CHARLIE KIRK',
+    id: 'kobe-bryant',
+    name: 'KOBE BRYANT',
     category: 'real',
     hints: [
-      'Male',                                       // gender
-      'Born 1993 – Living',                         // era
-      'Short hair + microphone',                    // visual
-      'Political commentator / activist',           // main role
-      'United States',                              // region
-      'Known for media + public speaking work',     // famous for
+      'Male',
+      '1978–2020',
+      'Athletic figure + purple and gold symbolism',
+      'Professional athlete known for relentless work ethic',
+      'United States / Los Angeles',
+      'Nicknamed after a “black mamba” and remembered as a global basketball icon',
     ],
-    image: '/images/charlie-kirk.png',
+    image: '/images/kobe-bryant.png',
+  },
+  {
+    id: 'galileo-galilei',
+    name: 'GALILEO GALILEI',
+    category: 'real',
+    hints: [
+      'Male',
+      'Renaissance scientific era (16th–17th century)',
+      'Bearded scholar + telescope imagery',
+      'Astronomer and experimental scientist',
+      'Italy / Mediterranean academic world',
+      'Defended a controversial view of the universe',
+    ],
+    image: '/images/galileo-galilei.png',
+  },
+  {
+    id: 'vincent-van-gogh',
+    name: 'VINCENT VAN GOGH',
+    category: 'real',
+    hints: [
+      'Male',
+      'Late 19th-century art movement',
+      'Straw hat + expressive brushstroke-style portraits',
+      'Painter known for emotional intensity and vivid color',
+      'Netherlands → France',
+      'Created many famous works while struggling through a turbulent personal life',
+    ],
+    image: '/images/vincent-van-gogh.png',
+  },
+  {
+    id: 'joan-of-arc',
+    name: 'JOAN OF ARC',
+    category: 'real',
+    hints: [
+      'Female',
+      'Medieval European era (15th century)',
+      'Armor + banner imagery rather than royal jewelry',
+      'Military figure whose actions were driven by powerful faith and conviction',
+      'France / Hundred Years’ War',
+      'Tried and executed young, later recognized as a national heroine and saint',
+    ],
+    image: '/images/joan-of-arc.png',
+  },
+  {
+    id: 'amelia-earhart',
+    name: 'AMELIA EARHART',
+    category: 'real',
+    hints: [
+      'Female',
+      '1897-1939',
+      'Leather flight jacket + pilot goggles imagery',
+      'Record-setting aviator and explorer',
+      'United States / global flight routes',
+      'Vanished mysteriously during an ambitious trans-ocean journey',
+    ],
+    image: '/images/amelia-earhart.png',
   },
 ]
 
+
 export const fictionalPersonas = [
   {
-    id: 'jesse-pinkman',
-    name: 'JESSE PINKMAN',
+    id: 'walter-white',
+    name: 'WALTER WHITE',
     category: 'fictional',
     hints: [
-      'Male',                                       // gender
-      '2000s TV drama era',                        // era
-      'Beanie hat + hoodie',                       // visual
-      'Television series (crime drama)',           // medium
-      'American Southwest setting',                // setting
-      'Streetwise partner / anti-hero',            // role
+      'Male',
+      '2000s crime-drama TV era',
+      'Glasses + bald head + hat imagery',
+      'Television series (crime drama)',
+      'American Southwest desert setting',
+      'Teacher-turned-criminal mastermind with a double life',
     ],
-    image: '/images/jesse-pinkman.png',
+    image: '/images/walter-white.png',
   },
   {
-    id: 'tony-soprano',
-    name: 'TONY SOPRANO',
+    id: 'bruce-wayne',
+    name: 'BRUCE WAYNE',
     category: 'fictional',
     hints: [
-      'Male',                                       // gender
-      'Late 1990s–2000s TV era',                   // era
-      'Silhouette in suit with cigar',             // visual
-      'Television series (drama)',                 // medium
-      'New Jersey suburban + mafia setting',       // setting
-      'Crime family leader / complex protagonist', // role
+      'Male',
+      'Comic book + superhero film era',
+      'Dark suit + bat iconography',
+      'Comics → film adaptations',
+      'Gothic urban city setting',
+      'Wealthy vigilante who lives behind a secret identity',
     ],
-    image: '/images/tony-soprano.png',
+    image: '/images/bruce-wayne.png',
   },
   {
-    id: 'daenerys-targaryen',
-    name: 'DAENERYS TARGARYEN',
+    id: 'jack-sparrow',
+    name: 'CAPTAIN JACK SPARROW',
     category: 'fictional',
     hints: [
-      'Female',                                     // gender
-      'Fantasy television / novel series era',      // era
-      'White hair + dragons',               // visual
-      'Television series (fantasy / drama)',        // medium
-      'Essos & Westeros (across continents)',       // setting
-      'Exiled princess turned ruler',               // role
+      'Male',
+      '2000s fantasy-adventure film era',
+      'Pirate hat + beads + compass imagery',
+      'Film franchise (fantasy adventure)',
+      'Caribbean seas / island settings',
+      'Charming trickster captain with unpredictable loyalties',
     ],
-    image: '/images/daenerys-targaryen.png',
+    image: '/images/jack-sparrow.png',
   },
   {
-    id: 'michael-scott',
-    name: 'MICHAEL SCOTT',
+    id: 'darth-vader',
+    name: 'DARTH VADER',
     category: 'fictional',
     hints: [
-      'Male',                                       // gender
-      '2000s sitcom era',                          // era
-      'Suit with goofy posture',                   // visual
-      'Television comedy series',                  // medium
-      'Scranton, Pennsylvania workplace setting',  // setting
-      'Office manager / comedic lead',             // role
+      'Male',
+      'Sci-fi film saga era',
+      'Black armor + breathing mask',
+      'Science-fiction film series',
+      'Galactic empire conflict setting',
+      'Once a gifted hero who transformed into a feared enforcer',
     ],
-    image: '/images/michael-scott.png',
+    image: '/images/darth-vader.png',
   },
   {
-    id: 'aragorn',
-    name: 'ARAGORN',
+    id: 'katniss-everdeen',
+    name: 'KATNISS EVERDEEN',
     category: 'fictional',
     hints: [
-      'Male',                                       // gender
-      'Fantasy novel + film era',                  // era
-      'Cloak + sword',                             // visual
-      'Books + movie trilogy',                     // medium
-      'Middle-earth world setting',                // setting
-      'Ranger / warrior / reluctant king',         // role
+      'Female',
+      '2010s dystopian film era',
+      'Bow + flame symbolism',
+      'Book trilogy → film adaptation',
+      'Divided futuristic nation setting',
+      'Reluctant survivor who becomes a symbol of rebellion',
     ],
-    image: '/images/aragorn.png',
+    image: '/images/katniss-everdeen.png',
   },
   {
-    id: 'spongebob',
-    name: 'SPONGEBOB SQUAREPANTS',
+    id: 'sherlock-holmes',
+    name: 'SHERLOCK HOLMES',
     category: 'fictional',
     hints: [
-      'Male',                                       // gender
-      '1990s–2000s animated era',                  // era
-      'Square body + smiling',                     // visual
-      'Animated TV series',                        // medium
-      'Underwater cartoon town setting',           // setting
-      'Optimistic fast-food worker',               // role
+      'Male',
+      'Classic detective literature era',
+      'Deerstalker hat + pipe imagery',
+      'Novels → film & TV adaptations',
+      'London / Victorian city setting',
+      'Brilliant investigator known for logic and deduction',
     ],
-    image: '/images/spongebob.png',
+    image: '/images/sherlock-holmes.png',
   },
   {
-    id: 'patrick-bateman',
-    name: 'PATRICK BATEMAN',
+    id: 'rick-grimes',
+    name: 'RICK GRIMES',
     category: 'fictional',
     hints: [
-      'Male',                                       // gender
-      '1980s–1990s novel + film era',              // era
-      'Suit + slicked hair + briefcase',           // visual
-      'Book → film adaptation (psychological thriller)', // medium
-      'Manhattan / corporate luxury setting',      // setting
-      'Wealthy professional with double life',     // role
+      'Male',
+      '2010s post-apocalyptic TV era',
+      'Sheriff hat + revolver imagery',
+      'Television horror-drama series',
+      'Rural + ruined urban American settings',
+      'Survivor-leader balancing morality and survival',
     ],
-    image: '/images/patrick-bateman.png',
+    image: '/images/rick-grimes.png',
   },
 ]
