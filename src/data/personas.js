@@ -1,17 +1,17 @@
 export const realPersonas = [
-  {
-  id: 'taylor-swift',
-  name: 'TAYLOR SWIFT',
+{
+  id: 'sabrina-carpenter',
+  name: 'SABRINA CARPENTER',
   category: 'real',
   hints: [
     'Female',
-    'Born 1989 — Living',
-    'Microphone + guitar imagery',
-    'Singer-songwriter known for narrative storytelling and genre shifts',
-    'United States / Nashville → global pop culture stage',
-    'Built a massive fan community, re-recorded past work',
+    'Born 1999 — Living',
+    'Pop singer + performance-stage imagery',
+    'Singer-songwriter known for witty, playful lyricism',
+    'United States / Pennsylvania → Los Angeles music scene',
+    'Breakout global success with viral chart-topping singles',
   ],
-  image: '/images/taylor-swift.png',
+  image: '/images/sabrina-carpenter.png',
 },
   {
     id: 'kobe-bryant',
@@ -83,6 +83,20 @@ export const realPersonas = [
     ],
     image: '/images/amelia-earhart.png',
   },
+  {
+  id: 'timothee-chalamet',
+  name: 'TIMOTHÉE CHALAMET',
+  category: 'real',
+  hints: [
+    'Male',
+    'Born 1995 — Living',
+    'Silhouette with wavy hair + tailored suit',
+    'Film actor known for emotionally nuanced performances',
+    'United States / New York City → international cinema',
+    'Breakout roles in indie dramas and major franchise films',
+  ],
+  image: '/images/timothee-chalamet.png',
+}
 ]
 
 
