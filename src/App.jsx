@@ -1,40 +1,39 @@
 // src/App.jsx
 import React, { useState, useEffect } from "react";
 import ModeSelector from "./components/ModeSelector";
-import GamePage from "./components/GamePage";
-import PracticeGamePage from "./components/PracticeGamePage";
+import GamePage from "./pages/GamePage";
+import PracticeGamePage from "./pages/PracticeGamePage";
 import { realPersonas, fictionalPersonas } from "./data/personas";
 import historicalData from "./data/historical.json";
+import { kidsPersonas } from "./data/Persons_kids";
+import historicalKids from "./data/historical_kids.json";
+import OtherModes from "./modes/OtherModes";
+import KidsSelector from "./modes/KidsSelector";
 import "./index.css";
 
-import { AuthProvider, useAuth } from "./components/AuthContext";
-import { getOrCreateProfile } from "./components/ProfileService";
-import { supabase } from "./components/supabaseClient";
-import AuthModal from "./components/AuthModal"; 
+import { AuthProvider, useAuth } from "./services/AuthContext";
+import { getOrCreateProfile } from "./services/ProfileService";
+import { supabase } from "./services/supabaseClient";
+import AuthModal from "./components/AuthModal";
 
 const historicalPersonas = historicalData.personas;
 
 function AppShell() {
-  // Which screen are we on? 'home' | 'daily' | 'practice'
   const [view, setView] = useState("home");
-
-  // For the daily game, which mode? 'real' | 'fictional'
   const [dailyMode, setDailyMode] = useState("real");
-
-  // Auth modal state
-  const [authMode, setAuthMode] = useState(null); // 'login' | 'signup' | null
+  const [kidsModeView, setKidsModeView] = useState(null);
+  const [practiceMode, setPracticeMode] = useState(null);
+  const [authMode, setAuthMode] = useState(null);
   const [upgradeMessage, setUpgradeMessage] = useState(null);
 
   const { user } = useAuth();
   const [streak, setStreak] = useState(null);
 
-  //  Load streak when user logs in / changes
   useEffect(() => {
     if (!user) {
       setStreak(null);
       return;
     }
-
     (async () => {
       const profile = await getOrCreateProfile();
       if (profile) {
@@ -45,9 +44,11 @@ function AppShell() {
 
   const handleSelectMode = (selectedMode) => {
     if (selectedMode === "practice") {
+      setPracticeMode(null);
       setView("practice");
+    } else if (selectedMode === "other") {
+      setView("other");
     } else {
-      // 'real' or 'fictional'
       setDailyMode(selectedMode);
       setView("daily");
     }
@@ -58,17 +59,41 @@ function AppShell() {
   };
 
   const handleRequireSignup = () => {
-    setUpgradeMessage(
-      ""
-    );
+    setUpgradeMessage("");
     setAuthMode("signup");
   };
 
   let content;
   if (view === "home") {
     content = <ModeSelector onSelectMode={handleSelectMode} />;
-  } else if (view === "daily") {
-    const personas = dailyMode === "real" ? realPersonas : fictionalPersonas;
+  } 
+  else if (view === "other") {
+  content = (
+    <OtherModes
+      onOpenKids={() => {
+        setKidsModeView("kids");
+        setView("kids");
+      }}
+      onBack={() => setView("home")}
+    />
+  );
+} else if (view === "kids") {
+  content = (
+    <KidsSelector
+      onDailyKids={() => {
+        setDailyMode("kids");
+        setView("daily");
+      }}
+      onPracticeKids={() => {
+        setPracticeMode("kids");
+        setView("practice");
+      }}
+      onBack={() => setView("home")}
+    />
+  );
+}
+  else if (view === "daily") {
+    const personas = dailyMode === "real" ? realPersonas : dailyMode === "fictional" ? fictionalPersonas : kidsPersonas;
 
     content = (
       <GamePage
@@ -79,9 +104,11 @@ function AppShell() {
       />
     );
   } else if (view === "practice") {
+    const practicePersonas = practiceMode === "kids" ? historicalKids.personas : historicalPersonas;
     content = (
       <PracticeGamePage
-        personas={historicalPersonas}
+        personas={practicePersonas}
+        mode={practiceMode}
         onBackHome={handleBackHome}
         onRequireSignup={handleRequireSignup}
       />
@@ -97,7 +124,6 @@ function AppShell() {
             <span className="logo-guesser">Guesser</span>
           </h1>
 
-          {/* Auth + streak display */}
           <div className="header-auth">
             {user ? (
               <>
@@ -105,15 +131,6 @@ function AppShell() {
                 {streak !== null && (
                   <span className="header-streak">🔥 Streak: {streak}</span>
                 )}
-                {/*<button
-                  className="header-btn"
-                  onClick={async () => {
-                    await supabase.auth.signOut();
-                    setView("home");
-                  }}
-                >
-                  Logout
-                </button>*/}
               </>
             ) : (
               <>
@@ -135,6 +152,7 @@ function AppShell() {
                 >
                   Sign up
                 </button>
+                
               </>
             )}
           </div>
@@ -146,7 +164,6 @@ function AppShell() {
         </footer>
       </div>
 
-      {/* Auth modal */}
       {authMode && (
         <AuthModal
           mode={authMode}

@@ -120,8 +120,20 @@ export default function ModeSelector({ onSelectMode }) {
               Daily
             </span>
           </div>
+
+          {/* (Kids mode moved to Other modes page) */}
         </div>
       </section>
+
+      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.25rem' }}>
+        <button
+          className="other-modes-button"
+          onClick={() => onSelectMode('other')}
+          aria-label="Other modes"
+        >
+          Other modes
+        </button>
+      </div>
     </div>
   );
 }

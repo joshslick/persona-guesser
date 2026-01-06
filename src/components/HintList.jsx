@@ -18,7 +18,7 @@ const FICTIONAL_HINT_QUESTIONS = [
   'Role? (wizard, superhero, etc.)',
 ]
 
-export default function HintList({ category, hints, revealedCount }) {
+export default function HintList({ category, hints, revealedCount, mode }) {
   const questions =
     category === 'fictional' ? FICTIONAL_HINT_QUESTIONS : REAL_HINT_QUESTIONS
 
@@ -31,7 +31,9 @@ export default function HintList({ category, hints, revealedCount }) {
     <div className="hints-grid">
       {paddedHints.map((answer, idx) => {
         const revealed = idx < revealedCount
-        const question = questions[idx] || `Hint ${idx + 1}`
+
+        // For kids mode show "Hint 1", "Hint 2", etc.
+        const label = mode === 'kids' ? `Hint ${idx + 1}` : (questions[idx] || `Hint ${idx + 1}`)
 
         const cardClass = `hint-card ${
           revealed ? 'hint-card-revealed' : 'hint-card-locked'
@@ -46,7 +48,7 @@ export default function HintList({ category, hints, revealedCount }) {
                 fontSize: '0.85rem',
               }}
             >
-              {idx + 1}. {question}
+              {label}
             </div>
 
             {revealed ? (
