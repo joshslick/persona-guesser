@@ -5,7 +5,7 @@ export const kidsPersonas = [
   name: "LIGHTNING MCQUEEN",
   category: "fictional",
   hints: [
-    "Red race car",
+    "race car",
     "Has a big lightning bolt",
     "Very fast",
     "Says 'Ka-chow!'",
@@ -42,34 +42,34 @@ export const kidsPersonas = [
       ],
       "image": "/images/spongebob.png"
     },
-  {
-    id: "mr-beast",
-    name: "MR BEAST",
-    category: "real",
-    hints: [
-      "Famous YouTuber",
-      "Known for big challenges and giveaways",
-      "Helps people in creative videos",
-      "Often works with friends",
-      "Donates money and builds projects",
-      "Very popular online creator"
-    ],
-    image: "/images/mr-beast.png"
-  },
-  {
-    id: "mickey-mouse",
-    name: "MICKEY MOUSE",
+ {
+    id: "minecraft-villager",
+    name: "MINECRAFT VILLAGER",
     category: "fictional",
     hints: [
-      "Iconic cartoon mouse",
-      "Wears red shorts",
-      "Created by Walt Disney",
-      "Has large round ears",
-      "Friend of Minnie",
-      "Classic animation character"
+      "Says 'Hmmm'",
+      "Big nose NPC",
+      "Trades for random items",
+      "Stares at you silently",
+      "From a blocky world",
+      "Lives in a village"
     ],
-    image: "/images/mickey-mouse.png"
+    image: "/images/minecraft-villager.png"
   },
+  {
+  id: "six-seven-kid",
+  name: "THE SIX SEVEN KID",
+  category: "fictional",
+  hints: [
+    "In 5th grade",
+    "Attends basketball games",
+    "Looks like he pays taxes already",
+    "Always picked first in PE",
+    "Loves to prank walmart",
+    "Loves to say 67"
+  ],
+  image: "/images/six-seven-kid.png"
+},
   {
     id: "pikachu",
     name: "PIKACHU",
@@ -89,11 +89,11 @@ export const kidsPersonas = [
     name: "SONIC THE HEDGEHOG",
     category: "fictional",
     hints: [
-      "Blue hedgehog",
-      "Super fast runner",
+      "video game character",
+      "Super fast",
       "Fights an evil scientist",
       "Collects golden rings",
-      "Comes from video games",
+      "hedgehog",
       "Has friends like Tails and Knuckles"
     ],
     image: "/images/sonic.png"
