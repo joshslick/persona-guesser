@@ -57,6 +57,20 @@ export const kidsPersonas = [
     image: "/images/minecraft-villager.png"
   },
   {
+  id: "dr-doofenshmirtz",
+  name: "DOCTOR DOOFENSHMIRTZ",
+  category: "fictional",
+  hints: [
+    "Evil scientist",
+    "Thick German accent",
+    "Builds complex devices",
+    "Has tragic childhood flashbacks",
+    "From a Disney cartoon",
+    "Nemesis is a platypus",
+  ],
+  image: "/images/dr-doofenshmirtz.png"
+},
+  {
   id: "six-seven-kid",
   name: "THE SIX SEVEN KID",
   category: "fictional",
@@ -84,18 +98,5 @@ export const kidsPersonas = [
     ],
     image: "/images/pikachu.png"
   },
-  {
-    id: "sonic",
-    name: "SONIC THE HEDGEHOG",
-    category: "fictional",
-    hints: [
-      "video game character",
-      "Super fast",
-      "Fights an evil scientist",
-      "Collects golden rings",
-      "hedgehog",
-      "Has friends like Tails and Knuckles"
-    ],
-    image: "/images/sonic.png"
-  }
+  
 ];

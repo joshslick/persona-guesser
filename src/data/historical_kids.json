@@ -1,20 +1,6 @@
 {
   "personas": [
     {
-      "id": "elmo",
-      "name": "ELMO",
-      "category": "fictional",
-      "hints": [
-        "Red fuzzy monster",
-        "Speaks in a high voice",
-        "Lives on a neighborhood with friends",
-        "From a long-running children's show",
-        "Loves to laugh and learn",
-        "Sesame Street character"
-      ],
-      "image": "/images/elmo.png"
-    },
-    {
       "id": "lightning-mcqueen",
       "name": "LIGHTNING MCQUEEN",
       "category": "fictional",
@@ -141,6 +127,20 @@
       "image": "/images/lebron-james.png"
     },
     {
+      "id": "among-us-crewmate",
+      "name": "AMONG US CREWMATE",
+      "category": "fictional",
+      "hints": [
+        "Wears a spacesuit",
+        "Short and bean-shaped",
+        "Completes tasks silently",
+        "Sometimes gets ejected",
+        "Can be innocent or not",
+        "From a very suspicious game"
+      ],
+      "image": "/images/among-us-crewmate.png"
+    },
+    {
       "id": "pikachu",
       "name": "PIKACHU",
       "category": "fictional",
@@ -167,6 +167,34 @@
         "Has friends like Tails and Knuckles"
       ],
       "image": "/images/sonic.png"
+    },
+    {
+      "id": "dr-doofenshmirtz",
+      "name": "DOCTOR DOOFENSHMIRTZ",
+      "category": "fictional",
+      "hints": [
+        "Evil scientist",
+        "Thick German accent",
+        "Builds complex devices",
+        "Has tragic childhood flashbacks",
+        "From a Disney cartoon",
+        "Nemesis is a platypus"
+      ],
+      "image": "/images/dr-doofenshmirtz.png"
+    },
+    {
+      "id": "aaron-rodgers",
+      "name": "AARON RODGERS",  
+      "category": "real",
+      "hints": [
+        "Professional football player",
+        "Plays as a quarterback",
+        "Known for his strong arm and accuracy",
+        "Has won a Super Bowl",
+        "Plays in the NFL",
+        "Green Bay Packers, New York Jets, and Pittsburgh Steelers"
+      ],    
+      "image": "/images/aaron-rodgers.png"
     }
   ]
 }
