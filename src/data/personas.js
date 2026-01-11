@@ -85,7 +85,7 @@ export const realPersonas = [
   },
   {
   id: 'timothee-chalamet',
-  name: 'TIMOTHÉE CHALAMET',
+  name: 'TIMOTHEE CHALAMET',
   category: 'real',
   hints: [
     'Male',

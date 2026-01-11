@@ -1,5 +1,6 @@
 // src/App.jsx
 import React, { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import ModeSelector from "./components/ModeSelector";
 import GamePage from "./pages/GamePage";
 import PracticeGamePage from "./pages/PracticeGamePage";
@@ -9,11 +10,13 @@ import { kidsPersonas } from "./data/Persons_kids";
 import historicalKids from "./data/historical_kids.json";
 import OtherModes from "./modes/OtherModes";
 import KidsSelector from "./modes/KidsSelector";
+import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import "./index.css";
 
 import { AuthProvider, useAuth } from "./services/AuthContext";
 import { getOrCreateProfile } from "./services/ProfileService";
-import { supabase } from "./services/supabaseClient";
 import AuthModal from "./components/AuthModal";
 
 const historicalPersonas = historicalData.personas;
@@ -36,9 +39,7 @@ function AppShell() {
     }
     (async () => {
       const profile = await getOrCreateProfile();
-      if (profile) {
-        setStreak(profile.current_streak ?? 0);
-      }
+      if (profile) setStreak(profile.current_streak ?? 0);
     })();
   }, [user]);
 
@@ -54,9 +55,7 @@ function AppShell() {
     }
   };
 
-  const handleBackHome = () => {
-    setView("home");
-  };
+  const handleBackHome = () => setView("home");
 
   const handleRequireSignup = () => {
     setUpgradeMessage("");
@@ -66,45 +65,45 @@ function AppShell() {
   let content;
   if (view === "home") {
     content = <ModeSelector onSelectMode={handleSelectMode} />;
-  } 
-  else if (view === "other") {
-  content = (
-    <OtherModes
-      onOpenKids={() => {
-        setKidsModeView("kids");
-        setView("kids");
-      }}
-      onBack={() => setView("home")}
-    />
-  );
-} else if (view === "kids") {
-  content = (
-    <KidsSelector
-      onDailyKids={() => {
-        setDailyMode("kids");
-        setView("daily");
-      }}
-      onPracticeKids={() => {
-        setPracticeMode("kids");
-        setView("practice");
-      }}
-      onBack={() => setView("home")}
-    />
-  );
-}
-  else if (view === "daily") {
-    const personas = dailyMode === "real" ? realPersonas : dailyMode === "fictional" ? fictionalPersonas : kidsPersonas;
-
+  } else if (view === "other") {
     content = (
-      <GamePage
-        key={dailyMode}
-        mode={dailyMode}
-        personas={personas}
-        onBackHome={handleBackHome}
+      <OtherModes
+        onOpenKids={() => {
+          setKidsModeView("kids");
+          setView("kids");
+        }}
+        onBack={() => setView("home")}
       />
     );
+  } else if (view === "kids") {
+    content = (
+      <KidsSelector
+        onDailyKids={() => {
+          setDailyMode("kids");
+          setView("daily");
+        }}
+        onPracticeKids={() => {
+          setPracticeMode("kids");
+          setView("practice");
+        }}
+        onBack={() => setView("home")}
+      />
+    );
+  } else if (view === "daily") {
+    const personas =
+      dailyMode === "real"
+        ? realPersonas
+        : dailyMode === "fictional"
+        ? fictionalPersonas
+        : kidsPersonas;
+
+    content = (
+      <GamePage key={dailyMode} mode={dailyMode} personas={personas} onBackHome={handleBackHome} />
+    );
   } else if (view === "practice") {
-    const practicePersonas = practiceMode === "kids" ? historicalKids.personas : historicalPersonas;
+    const practicePersonas =
+      practiceMode === "kids" ? historicalKids.personas : historicalPersonas;
+
     content = (
       <PracticeGamePage
         personas={practicePersonas}
@@ -116,7 +115,7 @@ function AppShell() {
   }
 
   return (
-    <>
+    <BrowserRouter>
       <div className="app-root">
         <header className="app-header">
           <h1 className="logo">
@@ -128,9 +127,7 @@ function AppShell() {
             {user ? (
               <>
                 <span className="header-user-email">{user.email}</span>
-                {streak !== null && (
-                  <span className="header-streak">🔥 Streak: {streak}</span>
-                )}
+                {streak !== null && <span className="header-streak">🔥 Streak: {streak}</span>}
               </>
             ) : (
               <>
@@ -152,15 +149,34 @@ function AppShell() {
                 >
                   Sign up
                 </button>
-                
               </>
             )}
           </div>
         </header>
 
-        <main className="app-main">{content}</main>
+        <nav className="topnav">
+          <Link to="/">Home</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/privacy">Privacy</Link>
+          <Link to="/terms">Terms</Link>
+        </nav>
+
+        <main className="app-main">
+          <Routes>
+            <Route path="/" element={content} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/terms" element={<Terms />} />
+          </Routes>
+        </main>
+
         <footer className="app-footer">
           <span>Daily persona guessing game &bull; React</span>
+          <div style={{ marginTop: 8 }}>
+            <Link to="/privacy">Privacy</Link> <span aria-hidden="true">·</span>{" "}
+            <Link to="/terms">Terms</Link> <span aria-hidden="true">·</span>{" "}
+            <Link to="/contact">Contact</Link>
+          </div>
         </footer>
       </div>
 
@@ -174,7 +190,7 @@ function AppShell() {
           upgradeMessage={upgradeMessage}
         />
       )}
-    </>
+    </BrowserRouter>
   );
 }
 

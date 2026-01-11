@@ -530,7 +530,36 @@ body {
   background: #dc2626;   /* red-600 */
   color: white;
 }
+.topnav {
+  width: 100%;
+  padding: 0.5rem 1.5rem;      /* same left padding as header */
+  display: flex;
+  justify-content: flex-start; /* left align */
+  align-items: center;
+  gap: 0.5rem;
 
+  background: transparent;     /* not a bar */
+  border: none;                /* no line */
+}
+
+.topnav a {
+  color: #111827;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+
+  transition: background-color 0.12s ease, transform 0.08s ease;
+}
+
+.topnav a:hover {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+}
 @media (max-width: 640px) {
   /* Main area should stretch so the card can scroll */
   .app-main {

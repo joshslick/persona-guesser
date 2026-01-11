@@ -15,6 +15,302 @@
       "image": "/images/einstein.png"
     },
     {
+      "id": "sabrina-carpenter",
+      "name": "SABRINA CARPENTER",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Born 1999 — Living",
+        "Pop singer + performance-stage imagery",
+        "Singer-songwriter known for witty, playful lyricism",
+        "United States / Pennsylvania → Los Angeles music scene",
+        "Breakout global success with viral chart-topping singles"
+      ],
+      "image": "/images/sabrina-carpenter.png"
+    },
+    {
+      "id": "kobe-bryant",
+      "name": "KOBE BRYANT",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1978–2020",
+        "Athletic figure + purple and gold symbolism",
+        "Professional athlete known for relentless work ethic",
+        "United States / Los Angeles",
+        "Nicknamed after a “black mamba” and remembered as a global basketball icon"
+      ],
+      "image": "/images/kobe-bryant.png"
+    },
+    {
+      "id": "galileo-galilei",
+      "name": "GALILEO GALILEI",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Renaissance scientific era (16th–17th century)",
+        "Bearded scholar + telescope imagery",
+        "Astronomer and experimental scientist",
+        "Italy / Mediterranean academic world",
+        "Defended a controversial view of the universe"
+      ],
+      "image": "/images/galileo-galilei.png"
+    },
+    {
+      "id": "vincent-van-gogh",
+      "name": "VINCENT VAN GOGH",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Late 19th-century art movement",
+        "Straw hat + expressive brushstroke-style portraits",
+        "Painter known for emotional intensity and vivid color",
+        "Netherlands → France",
+        "Created many famous works while struggling through a turbulent personal life"
+      ],
+      "image": "/images/vincent-van-gogh.png"
+    },
+    {
+      "id": "joan-of-arc",
+      "name": "JOAN OF ARC",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Medieval European era (15th century)",
+        "Armor + banner imagery rather than royal jewelry",
+        "Military figure whose actions were driven by powerful faith and conviction",
+        "France / Hundred Years’ War",
+        "Tried and executed young, later recognized as a national heroine and saint"
+      ],
+      "image": "/images/joan-of-arc.png"
+    },
+    {
+      "id": "amelia-earhart",
+      "name": "AMELIA EARHART",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1897-1939",
+        "Leather flight jacket + pilot goggles imagery",
+        "Record-setting aviator and explorer",
+        "United States / global flight routes",
+        "Vanished mysteriously during an ambitious trans-ocean journey"
+      ],
+      "image": "/images/amelia-earhart.png"
+    },
+    {
+      "id": "timothee-chalamet",
+      "name": "TIMOTHEE CHALAMET",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Born 1995 — Living",
+        "Silhouette with wavy hair + tailored suit",
+        "Film actor known for emotionally nuanced performances",
+        "United States / New York City → international cinema",
+        "Breakout roles in indie dramas and major franchise films"
+      ],
+      "image": "/images/timothee-chalamet.png"
+    },
+    {
+      "id": "sabrina-carpenter",
+      "name": "SABRINA CARPENTER",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Born 1999 — Living",
+        "Pop singer + performance-stage imagery",
+        "Singer-songwriter known for witty, playful lyricism",
+        "United States / Pennsylvania → Los Angeles music scene",
+        "Breakout global success with viral chart-topping singles"
+      ],
+      "image": "/images/sabrina-carpenter.png"
+    },
+    {
+      "id": "kobe-bryant",
+      "name": "KOBE BRYANT",
+      "category": "real",
+      "hints": [
+        "Male",
+        "1978–2020",
+        "Athletic figure + purple and gold symbolism",
+        "Professional athlete known for relentless work ethic",
+        "United States / Los Angeles",
+        "Nicknamed after a “black mamba” and remembered as a global basketball icon"
+      ],
+      "image": "/images/kobe-bryant.png"
+    },
+    {
+      "id": "galileo-galilei",
+      "name": "GALILEO GALILEI",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Renaissance scientific era (16th–17th century)",
+        "Bearded scholar + telescope imagery",
+        "Astronomer and experimental scientist",
+        "Italy / Mediterranean academic world",
+        "Defended a controversial view of the universe"
+      ],
+      "image": "/images/galileo-galilei.png"
+    },
+    {
+      "id": "vincent-van-gogh",
+      "name": "VINCENT VAN GOGH",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Late 19th-century art movement",
+        "Straw hat + expressive brushstroke-style portraits",
+        "Painter known for emotional intensity and vivid color",
+        "Netherlands → France",
+        "Created many famous works while struggling through a turbulent personal life"
+      ],
+      "image": "/images/vincent-van-gogh.png"
+    },
+    {
+      "id": "joan-of-arc",
+      "name": "JOAN OF ARC",
+      "category": "real",
+      "hints": [
+        "Female",
+        "Medieval European era (15th century)",
+        "Armor + banner imagery rather than royal jewelry",
+        "Military figure whose actions were driven by powerful faith and conviction",
+        "France / Hundred Years’ War",
+        "Tried and executed young, later recognized as a national heroine and saint"
+      ],
+      "image": "/images/joan-of-arc.png"
+    },
+    {
+      "id": "amelia-earhart",
+      "name": "AMELIA EARHART",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1897-1939",
+        "Leather flight jacket + pilot goggles imagery",
+        "Record-setting aviator and explorer",
+        "United States / global flight routes",
+        "Vanished mysteriously during an ambitious trans-ocean journey"
+      ],
+      "image": "/images/amelia-earhart.png"
+    },
+    {
+      "id": "timothee-chalamet",
+      "name": "TIMOTHEE CHALAMET",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Born 1995 — Living",
+        "Silhouette with wavy hair + tailored suit",
+        "Film actor known for emotionally nuanced performances",
+        "United States / New York City → international cinema",
+        "Breakout roles in indie dramas and major franchise films"
+      ],
+      "image": "/images/timothee-chalamet.png"
+    }
+  ],
+  "fictionalPersonas": [
+    {
+      "id": "walter-white",
+      "name": "WALTER WHITE",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "2000s crime-drama TV era",
+        "Glasses + bald head + hat imagery",
+        "Television series (crime drama)",
+        "American Southwest desert setting",
+        "Teacher-turned-criminal mastermind with a double life"
+      ],
+      "image": "/images/walter-white.png"
+    },
+    {
+      "id": "bruce-wayne",
+      "name": "BRUCE WAYNE",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Comic book + superhero film era",
+        "Dark suit + bat iconography",
+        "Comics → film adaptations",
+        "Gothic urban city setting",
+        "Wealthy vigilante who lives behind a secret identity"
+      ],
+      "image": "/images/bruce-wayne.png"
+    },
+    {
+      "id": "jack-sparrow",
+      "name": "CAPTAIN JACK SPARROW",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "2000s fantasy-adventure film era",
+        "Pirate hat + beads + compass imagery",
+        "Film franchise (fantasy adventure)",
+        "Caribbean seas / island settings",
+        "Charming trickster captain with unpredictable loyalties"
+      ],
+      "image": "/images/jack-sparrow.png"
+    },
+    {
+      "id": "darth-vader",
+      "name": "DARTH VADER",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Sci-fi film saga era",
+        "Black armor + breathing mask",
+        "Science-fiction film series",
+        "Galactic empire conflict setting",
+        "Once a gifted hero who transformed into a feared enforcer"
+      ],
+      "image": "/images/darth-vader.png"
+    },
+    {
+      "id": "katniss-everdeen",
+      "name": "KATNISS EVERDEEN",
+      "category": "fictional",
+      "hints": [
+        "Female",
+        "2010s dystopian film era",
+        "Bow + flame symbolism",
+        "Book trilogy → film adaptation",
+        "Divided futuristic nation setting",
+        "Reluctant survivor who becomes a symbol of rebellion"
+      ],
+      "image": "/images/katniss-everdeen.png"
+    },
+    {
+      "id": "sherlock-holmes",
+      "name": "SHERLOCK HOLMES",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "Classic detective literature era",
+        "Deerstalker hat + pipe imagery",
+        "Novels → film & TV adaptations",
+        "London / Victorian city setting",
+        "Brilliant investigator known for logic and deduction"
+      ],
+      "image": "/images/sherlock-holmes.png"
+    },
+    {
+      "id": "rick-grimes",
+      "name": "RICK GRIMES",
+      "category": "fictional",
+      "hints": [
+        "Male",
+        "2010s post-apocalyptic TV era",
+        "Sheriff hat + revolver imagery",
+        "Television horror-drama series",
+        "Rural + ruined urban American settings",
+        "Survivor-leader balancing morality and survival"
+      ],
+      "image": "/images/rick-grimes.png"
+    },
+    {
       "id": "donald-trump",
       "name": "DONALD TRUMP",
       "category": "real",
