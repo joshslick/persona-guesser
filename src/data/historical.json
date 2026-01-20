@@ -310,6 +310,287 @@
       ],
       "image": "/images/rick-grimes.png"
     },
+     {
+      "id": "jeff-probst",
+      "name": "JEFF PROBST",
+      "category": "real",
+      "hints": [
+        "Male",
+        "Born 1961 — Living",
+        "Fire-lit council gatherings",
+        "Long-running competitive social experiment on television",
+        "Tropical island setting",
+        "Ends every episode with a decisive phrase"
+      ],
+      "image": "/images/jeff-probst.png"
+    },
+    {
+      "id": "sydney-sweeney",
+      "name": "SYDNEY SWEENEY",
+      "category": "real",
+      "hints": [
+        "Woman",
+        "Born 1997 — Living",
+        "Blonde hair + modern Hollywood red carpet",
+        "Actress",
+        "United States",
+        "Known for intense roles in modern TV dramas"
+      ],
+      "image": "/images/sydney-sweeney.png"
+    },
+    {
+      "id": "cristiano-ronaldo",
+      "name": "CRISTIANO RONALDO",
+      "category": "real",
+      "hints": [
+        "Man",
+        "Born 1985 — Living",
+        "Soccer jersey + goal celebration",
+        "Professional footballer",
+        "Portugal → global clubs",
+        "One of the most famous athletes in the world"
+      ],
+      "image": "/images/cristiano-ronaldo.png"
+    },
+    {
+      "id": "oprah-winfrey",
+      "name": "OPRAH WINFREY",
+      "category": "real",
+      "hints": [
+        "Woman",
+        "Born 1954 — Living",
+        "Talk show set + studio lights",
+        "Media host",
+        "United States",
+        "Shaped modern talk-show culture"
+      ],
+      "image": "/images/oprah-winfrey.png"
+    },
+    {
+      "id": "serena-williams",
+      "name": "SERENA WILLIAMS",
+      "category": "real",
+      "hints": [
+        "Woman",
+        "Born 1981 — Living",
+        "Tennis racket + powerful stance",
+        "Professional athlete",
+        "United States",
+        "One of the greatest tennis players of all time"
+      ],
+      "image": "/images/serena-williams.png"
+    },
+    {
+      "id": "frida-kahlo",
+      "name": "FRIDA KAHLO",
+      "category": "real",
+      "hints": [
+        "Female",
+        "1907–1954",
+        "Floral hair + bold self-portrait style",
+        "Painter turning personal pain into art",
+        "Mexico / surrealist art world",
+        "Known for symbolic self-portraits"
+      ],
+      "image": "/images/frida-kahlo.png"
+    },
+    {
+      "id": "scarlett-johansson",
+      "name": "SCARLETT JOHANSSON",
+      "category": "real",
+      "hints": [
+        "Woman",
+        "Born 1984 — Living",
+        "Red hair + spy suit imagery",
+        "Actress",
+        "United States",
+        "Played a famous super-spy in blockbuster films"
+      ],
+      "image": "/images/scarlett-johansson.png"
+    },
+    {
+      "id": "gus-fring",
+      "name": "GUSTAVO FRING",
+      "category": "fictional",
+      "hints": [
+        "Man",
+        "2000s prestige TV era",
+        "Neat suit + calm controlled smile",
+        "Television series",
+        "American Southwest crime setting",
+        "Criminal strategist hiding behind a professional facade"
+      ],
+      "image": "/images/gus-fring.png"
+    },
+    {
+      "id": "violet-beauregarde",
+      "name": "VIOLET BEAUREGARDE",
+      "category": "fictional",
+      "hints": [
+        "Woman",
+        "1960s–2000s children’s fantasy era",
+        "Chewing gum + sporty tracksuit imagery",
+        "Book & film",
+        "Whimsical candy-factory world",
+        "Competitive child obsessed with breaking records"
+      ],
+      "image": "/images/violet-beauregarde.png"
+    },
+    {
+      "id": "hannibal-lecter",
+      "name": "HANNIBAL LECTER",
+      "category": "fictional",
+      "hints": [
+        "Man",
+        "1990s–2010s psychological thriller era",
+        "Refined posture + unsettling smile",
+        "Film & television",
+        "Modern crime investigation world",
+        "Brilliant psychiatrist with monstrous secrets"
+      ],
+      "image": "/images/hannibal-lecter.png"
+    },
+    {
+      "id": "elizabeth-swann",
+      "name": "ELIZABETH SWANN",
+      "category": "fictional",
+      "hints": [
+        "Woman",
+        "2000s fantasy-adventure film era",
+        "Corset dress + pirate sword imagery",
+        "Film franchise",
+        "Caribbean sea adventure world",
+        "Governor’s daughter turned pirate leader"
+      ],
+      "image": "/images/elizabeth-swann.png"
+    },
+    {
+      "id": "saul-goodman",
+      "name": "SAUL GOODMAN",
+      "category": "fictional",
+      "hints": [
+        "Man",
+        "2000s crime-drama TV era",
+        "Flashy suit + phone imagery",
+        "Television series",
+        "American Southwest",
+        "Rule-bending survival lawyer"
+      ],
+      "image": "/images/saul-goodman.png"
+    },
+    {
+      "id": "rose-dewitt-bukater",
+      "name": "ROSE DEWITT BUKATER",
+      "category": "fictional",
+      "hints": [
+        "Woman",
+        "1990s historical romance film era",
+        "Elegant Edwardian dress + ocean backdrop",
+        "Film",
+        "Early 20th-century transatlantic voyage",
+        "Young aristocrat escaping a controlled life"
+      ],
+      "image": "/images/rose-dewitt-bukater.png"
+    },
+    {
+      "id": "homelander",
+      "name": "HOMELANDER",
+      "category": "fictional",
+      "hints": [
+        "Man",
+        "2010s–2020s superhero satire era",
+        "Patriotic cape + forced smile",
+        "Television series",
+        "Modern corporate-controlled superhero world",
+        "Super-powered public icon hiding a dangerous ego"
+      ],
+      "image": "/images/homelander.png"
+    },
+
+    {
+      "id": "rhaenyra-targaryen",
+      "name": "RHAENYRA TARGARYEN",
+      "category": "fictional",
+      "hints": [
+        "Woman",
+        "2020s fantasy TV era",
+        "Silver-blonde hair + dragon imagery",
+        "Television series",
+        "Medieval dynasty fantasy world",
+        "Princess fighting for a stolen throne"
+      ],
+      "image": "/images/rhaenyra-targaryen.png"
+    },
+    {
+      "id": "cassian-andor",
+      "name": "CASSIAN ANDOR",
+      "category": "fictional",
+      "hints": [
+        "Man",
+        "2020s sci-fi TV era",
+        "Rugged coat + blaster",
+        "Television series",
+        "Galactic rebellion setting",
+        "Reluctant spy fighting an empire"
+      ],
+      "image": "/images/cassian-andor.png"
+    },
+    {
+      "id": "aemond-targaryen",
+      "name": "AEMOND TARGARYEN",
+      "category": "fictional",
+      "hints": [
+        "Man",
+        "2020s fantasy TV era",
+        "Silver hair + eye patch",
+        "Television series",
+        "Medieval dragon-rider kingdom",
+        "Vengeful prince bonded to a massive dragon"
+      ],
+      "image": "/images/aemond-targaryen.png"
+    },
+    {
+      "id": "ellie-williams",
+      "name": "ELLIE WILLIAMS",
+      "category": "fictional",
+      "hints": [
+        "Woman",
+        "2020s post-apocalypse TV/game era",
+        "Messy brown hair + backpack",
+        "Video game / television",
+        "Infected ruined America",
+        "Immune teenager central to humanity’s survival"
+      ],
+      "image": "/images/ellie-williams.png"
+    },
+    {
+      "id": "gale-boetticher",
+      "name": "GALE BOETTICHER",
+      "category": "fictional",
+      "hints": [
+        "Man",
+        "2000s crime TV era",
+        "Glasses + lab notebook",
+        "Television series",
+        "American Southwest meth lab world",
+        "Chemist with a love for poetry"
+      ],
+      "image": "/images/gale-boetticher.png"
+    },
+    {
+      "id": "lalo-salamanca",
+      "name": "LALO SALAMANCA",
+      "category": "fictional",
+      "hints": [
+        "Man",
+        "2010s crime TV era",
+        "Charming smile + expensive suit",
+        "Television series",
+        "American Southwest cartel world",
+        "Dangerous fixer who seems friendly until he isn’t"
+      ],
+      "image": "/images/lalo-salamanca.png"
+    },
     {
       "id": "donald-trump",
       "name": "DONALD TRUMP",
