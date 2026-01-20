@@ -42,6 +42,20 @@ export const realPersonas = [
   image: "/images/keanu-reeves.png",
 },
 {
+  id: "usain-bolt",
+  name: "USAIN BOLT",
+  category: "real",
+  hints: [
+    "Man",
+    "Born 1986 — Living",
+    "Lightning-bolt pose + sprint track",
+    "Professional athlete",
+    "Jamaica",
+    "Fastest sprinter in recorded history",
+  ],
+  image: "/images/usain-bolt.png",
+},
+{
   id: "ryan-gosling",
   name: "RYAN GOSLING",
   category: "real",
