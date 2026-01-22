@@ -188,6 +188,12 @@ body {
   border-color: #dc2626;       /* red border */
 }
 
+/* Auto-revealed hints (no hints used) = green with content visible */
+.hint-card-auto-revealed {
+  background-color: #bbf7d0;   /* light green */
+  border-color: #16a34a;       /* green border */
+}
+
 .hint-lock {
   color: #065f46;              /* darker green text to match locked state */
   font-style: italic;

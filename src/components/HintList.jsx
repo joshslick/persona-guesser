@@ -18,7 +18,7 @@ const FICTIONAL_HINT_QUESTIONS = [
   'Role? (wizard, superhero, etc.)',
 ]
 
-export default function HintList({ category, hints, revealedCount, mode }) {
+export default function HintList({ category, hints, revealedCount, mode, gameStatus }) {
   const questions =
     category === 'fictional' ? FICTIONAL_HINT_QUESTIONS : REAL_HINT_QUESTIONS
 
@@ -26,17 +26,21 @@ export default function HintList({ category, hints, revealedCount, mode }) {
   const paddedHints = Array.from({ length: maxHints }).map(
     (_, idx) => hints[idx] ?? ''
   )
+  
+  // When game is won, show all hints
+  const showAllHints = gameStatus === 'won'
 
   return (
     <div className="hints-grid">
       {paddedHints.map((answer, idx) => {
-        const revealed = idx < revealedCount
+        const wasRevealedDuringGame = idx < revealedCount
+        const isAutoRevealed = showAllHints && !wasRevealedDuringGame
 
         // For kids mode show "Hint 1", "Hint 2", etc.
         const label = mode === 'kids' ? `Hint ${idx + 1}` : (questions[idx] || `Hint ${idx + 1}`)
 
         const cardClass = `hint-card ${
-          revealed ? 'hint-card-revealed' : 'hint-card-locked'
+          isAutoRevealed ? 'hint-card-auto-revealed' : wasRevealedDuringGame ? 'hint-card-revealed' : 'hint-card-locked'
         }`
 
         return (
@@ -51,7 +55,7 @@ export default function HintList({ category, hints, revealedCount, mode }) {
               {label}
             </div>
 
-            {revealed ? (
+            {wasRevealedDuringGame || isAutoRevealed ? (
               <div style={{ fontSize: '0.9rem' }}>
                 {answer || 'No answer configured yet.'}
               </div>
