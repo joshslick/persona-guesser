@@ -125,7 +125,7 @@ export default function ModeSelector({ onSelectMode }) {
         </div>
       </section>
 
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.25rem' }}>
+      {/* <div style={{ display: 'flex', justifyContent: 'center', marginTop: '1.25rem' }}>
         <button
           className="other-modes-button"
           onClick={() => onSelectMode('other')}
@@ -133,7 +133,7 @@ export default function ModeSelector({ onSelectMode }) {
         >
           Other modes
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
