@@ -6,12 +6,12 @@ function getTodayPersona(personas) {
   if (!personas || personas.length === 0) return null;
 
   const today = new Date();
-  const dayOfWeek = today.getDay();
+  const dayOfMonth = today.getDate(); // 1-31
 
-  const schedule = personas.slice(0, 7);
+  const schedule = personas.slice(0, 30);
   if (schedule.length === 0) return null;
 
-  const idx = dayOfWeek % schedule.length;
+  const idx = (dayOfMonth - 1) % schedule.length; // Convert to 0-based index
   return schedule[idx];
 }
 

@@ -499,6 +499,28 @@ body {
   color: red;
   margin-top: .5rem;
 }
+
+.modal-success {
+  color: #16a34a;
+  margin-top: .5rem;
+  font-weight: 600;
+}
+
+.forgot-password-link {
+  background: none;
+  border: none;
+  color: #2563eb;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.forgot-password-link:hover {
+  color: #1d4ed8;
+}
+
 .header-btn {
   border: none;
   outline: none;
